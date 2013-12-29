@@ -10,7 +10,7 @@ Coming soon!
 * Sam Billings - Lore Master
 * Brian - Lore Master
 * Foxiepaws - Architect
-* Terra-And-Luna - Developer
+* Terra-And-Luna - Core Developer
 
 
 
