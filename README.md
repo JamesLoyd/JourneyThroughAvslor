@@ -15,9 +15,9 @@ So, hopefully soon, you will be able to dive into our realm of story, adventure,
 
 ###Roles###
 Every member of the core team has an important role.
-* Lore Master - charged with weaving the story, lore, and history of the in game realm.
-* Developers - charged with coding and developing the game
-* Architect - charged with helping us figure out the right models and design patterns to use
+* Lore Master - charged with weaving the story, lore, and history of the in game realm. The Lore Master leads the Lore section of the game.
+* Core Developers - charged with coding and developing the game including the writing of lore.
+* Architect - charged with helping us figure out the right models and design patterns to use.
 
 ##How to get involved ##
 Send us a pull request or catch us on IRC.
