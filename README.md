@@ -9,7 +9,7 @@ Coming soon!
   * jamestloyd@gmail.com
 * Sam Billings - Lore Master
 * Brian - Lore Master
-* Foxiepaws - Architect
+* Foxiepaws - Architect  and Core Developer
 * Terra-And-Luna - Core Developer
 
 
