@@ -16,5 +16,6 @@ Coming soon!
 
 We are \#JourneryThroughAvslor on [FreeNode](http://freenode.net/)
 
-
+##License ##
+We are licensed under [Apache v2.0](../master/LICENSE).
 
