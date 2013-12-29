@@ -13,8 +13,7 @@ Coming soon!
 * Terra-And-Luna - Core Developer
 
 ##IRC Channel##
-
-We are \#JourneryThroughAvslor on [FreeNode](http://freenode.net/)
+We are located at  \#JourneryThroughAvslor on [FreeNode](http://freenode.net/)
 
 ##License ##
 We are licensed under [Apache v2.0](../master/LICENSE).
