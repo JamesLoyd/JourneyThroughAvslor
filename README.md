@@ -8,7 +8,7 @@ Coming soon!
 * James Loyd - Lead Developer and Project Manager
   * jamestloyd@gmail.com
 * Sam Billings - Lore Master
-* Nartaga - Lore Master
+* Brian - Lore Master
 
 
 
