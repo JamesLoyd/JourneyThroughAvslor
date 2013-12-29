@@ -14,7 +14,7 @@ Coming soon!
 
 ##IRC Channel##
 
-We are \#JourneryThroughAvslor on FreeNode
+We are \#JourneryThroughAvslor on [FreeNode](http://freenode.net/)
 
 
 
