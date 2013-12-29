@@ -12,5 +12,9 @@ Coming soon!
 * Foxiepaws - Architect  and Core Developer
 * Terra-And-Luna - Core Developer
 
+##IRC Channel##
+
+We are \#JourneryThroughAvslor on FreeNode
+
 
 
