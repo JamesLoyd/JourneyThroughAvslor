@@ -1,8 +1,8 @@
-JourneyThroughAvslor
+Journey Through Avslor
 ====================
 
 ##About##
-Coming soon!
+We are an open source project. And, we are a fun interactive text based RPG!
 
 ##Meet the team##
 * James Loyd - Lead Developer and Project Manager
