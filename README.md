@@ -26,5 +26,5 @@ Send us a pull request or catch us on IRC.
 We are located at  \#JourneryThroughAvslor on [FreeNode](http://freenode.net/)
 
 ##License ##
-We are licensed under [Apache v2.0](../master/LICENSE).
+We are licensed under [Apache v2.0](https://github.com/carharttjimmy/JourneyThroughAvslor/blob/master/LICENSE).
 
