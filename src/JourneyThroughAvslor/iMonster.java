@@ -14,7 +14,7 @@ package JourneyThroughAvslor;/*   Copyright 2013 James Loyd
  */
 
 /* This interface is a contract for all classes that are monsters in the game.
-* All monster classes must provide thier own implementation for these functions.
+* All monster classes must provide their own implementation for these functions.
 */
 public interface iMonster
 {
