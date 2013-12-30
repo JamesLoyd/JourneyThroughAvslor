@@ -10,7 +10,6 @@ The Avslor team is looking to have the game blend elements of interactive ficito
 
 ##Meet the team##
 * James Loyd - Lead Developer and Project Manager
-  * jamestloyd@gmail.com
 * Sam Billings - Lore Master
 * Brian - Lore Master
 * Foxiepaws - Architect  and Core Developer
