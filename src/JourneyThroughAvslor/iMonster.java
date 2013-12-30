@@ -22,5 +22,6 @@ public interface iMonster
     abstract void raiseDefense();
     abstract void raiseAttack();
     abstract void displayHealthPoints();
+    abstract void loot(boolean canLoot);
     abstract String getRole();
 }
