@@ -19,6 +19,7 @@ Every member of the core team has an important role.
 * Core Developers - charged with coding and developing the game including the writing of lore.
 * Architect - charged with helping us figure out the right models and design patterns to use.
 * Project Manager - charged with directing everyone towards goals and milestones.
+
 ##How to get involved ##
 Send us a pull request or catch us on IRC.
 
