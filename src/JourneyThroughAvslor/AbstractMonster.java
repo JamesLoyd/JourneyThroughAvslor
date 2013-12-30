@@ -16,8 +16,4 @@ package JourneyThroughAvslor;
  */
 public abstract class AbstractMonster
 {
-    protected void Save()
-    {
-        //todo
-    }
 }
