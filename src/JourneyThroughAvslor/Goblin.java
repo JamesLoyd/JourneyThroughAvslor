@@ -14,7 +14,7 @@ package JourneyThroughAvslor;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class BaseGoblin extends AbstractMonster
+public class Goblin extends AbstractMonster
 {
 
     //fields
@@ -24,14 +24,14 @@ public class BaseGoblin extends AbstractMonster
     private double defensePoints;
 
     //Constructor
-    public BaseGoblin()
+    public Goblin()
     {
         nameOfGoblin = "Steve";
         hitPoints = 100;
         attackPoints = 50;
         defensePoints = 50;
     }
-    public BaseGoblin(String nameOfGoblin, double hitPoints, double attackPoints, double defensePoints)
+    public Goblin(String nameOfGoblin, double hitPoints, double attackPoints, double defensePoints)
     {
         this.nameOfGoblin = nameOfGoblin;
         this.hitPoints = hitPoints;
