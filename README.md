@@ -5,6 +5,9 @@ Journey Through Avslor
 We are an open source project. And, we are a fun interactive text based RPG!
 So, hopefully soon, you will be able to dive into our realm of story, adventure, betrayal, and intrigue.
 
+###Playstyle###
+The Avslor team is looking to have the game blend elements of interactive ficiton and the turn based combat of a Journal RPG.
+
 ##Meet the team##
 * James Loyd - Lead Developer and Project Manager
   * jamestloyd@gmail.com
