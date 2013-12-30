@@ -74,4 +74,9 @@ public class BaseHumanoid extends AbstractMonster
     {
         return "Name";
     }
+    public void loot(boolean canHasLoot)
+    {
+
+    }
+
 }
