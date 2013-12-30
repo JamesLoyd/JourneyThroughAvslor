@@ -14,6 +14,6 @@ package JourneyThroughAvslor;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public abstract class AbstractMonster
+public abstract class AbstractMonster implements iMonster
 {
 }
