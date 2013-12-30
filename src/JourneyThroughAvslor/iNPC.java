@@ -1,4 +1,5 @@
-package JourneyThroughAvslor;/*   Copyright 2013 James Loyd
+package JourneyThroughAvslor;
+/*   Copyright 2013 James Loyd
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
  *   you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@ package JourneyThroughAvslor;/*   Copyright 2013 James Loyd
  */
 
 /* This interface is a contract for all classes that are monsters in the game.
-* All monster classes must provide their own implementation for these functions.
+* All monster classes must provide their own implementation for these methods.
 */
 public interface iNPC
 {
