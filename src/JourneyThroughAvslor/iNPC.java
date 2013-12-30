@@ -1,6 +1,4 @@
-package JourneyThroughAvslor;
-
-/*  Copyright 2013 James Loyd
+package JourneyThroughAvslor;/*   Copyright 2013 James Loyd
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
  *   you may not use this file except in compliance with the License.
@@ -14,6 +12,16 @@ package JourneyThroughAvslor;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
+
+/* This interface is a contract for all classes that are monsters in the game.
+* All monster classes must provide their own implementation for these functions.
+*/
 public interface iNPC
 {
+    abstract double attack(); 
+    abstract void raiseDefense();
+    abstract void raiseAttack();
+    abstract void displayHealthPoints();
+    abstract void loot(boolean canLoot);
+    abstract String getRole();
 }
