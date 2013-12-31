@@ -24,11 +24,16 @@ public interface iNonCharacter
 
     /* buff and debuff take in the name of the stat to debuff and the method
      * works out which stat to raise internally; seems better than having
-     * individual buff/debuff methods for each stat */
-    abstract void buff(String stat);
-    abstract void debuff(String stat);
+     * individual buff/debuff methods for each stat 
+     *
+     * amount is... currently vague. undecided as to whether it refers to
+     * a multiplier applied to the stat, or a straight increase/decrease
+     * to that stat. */
+    abstract void buff(String stat, double amount);
 
     abstract void displayHealthPoints();
     abstract void loot(boolean canLoot);
     abstract String getRole();
+    abstract void interact();
+    abstract String getFaction();
 }
