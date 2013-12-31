@@ -32,7 +32,7 @@ public interface iNonCharacter
     abstract void buff(String stat, double amount);
 
     abstract void displayHealthPoints();
-    abstract void loot(boolean canLoot);
+    abstract void loot();
     abstract String getRole();
     abstract void interact();
     abstract String getFaction();
