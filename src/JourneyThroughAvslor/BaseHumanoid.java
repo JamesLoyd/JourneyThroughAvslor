@@ -16,7 +16,6 @@ package JourneyThroughAvslor;
  */
 public class BaseHumanoid extends AbstractMonster
 {
-
     //fields
     private String nameOfHumanoid;
     private String role;
@@ -30,11 +29,12 @@ public class BaseHumanoid extends AbstractMonster
     public BaseHumanoid()
     {
         nameOfHumanoid = "Steve";
-        role = null;
         hitPoints = 100;
         attackPoints = 50;
         defensePoints = 50;
         canLoot = true;
+        role = null;
+        factionList = null;
     }
 
     public BaseHumanoid(String nameOfHumanoid, double hitPoints, double attackPoints, double defensePoints)
@@ -57,7 +57,7 @@ public class BaseHumanoid extends AbstractMonster
         this.hitPoints = hitPoints;
         this.attackPoints = attackPoints;
         this.defensePoints = defensePoints;
-        canLoot = true;
+        this.canLoot = canLoot;
         role = null;
         factionList = null;
     }
