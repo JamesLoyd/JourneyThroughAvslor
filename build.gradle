@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'JourneyThroughAvslor.Main'
+    }
+}
+
+repositories {
+        mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+// vim: filetype=groovy 

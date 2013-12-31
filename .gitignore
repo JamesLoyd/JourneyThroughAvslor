@@ -9,3 +9,11 @@
 .idea/
 *.iml
 *.iws
+
+# Gradle
+.gradle/
+
+# builds
+build/
+obj/
+
