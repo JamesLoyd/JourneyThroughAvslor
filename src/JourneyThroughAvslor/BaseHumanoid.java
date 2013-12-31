@@ -39,21 +39,27 @@ public class BaseHumanoid extends AbstractMonster
         this.defensePoints = defensePoints;
     }
 
-    //Methods
     @Override
     public double attack()
     {
-        return Utility.getAttackDamage(attackPoints, 12);
+        return 0;
+    }
+
+    //Methods
+    @Override
+    public double receiveAttack()
+    {
+        return 0;
     }
 
     @Override
-    public void raiseDefense()
+    public void buff(String stat)
     {
 
     }
 
     @Override
-    public void raiseAttack()
+    public void debuff(String stat)
     {
 
     }
@@ -78,5 +84,4 @@ public class BaseHumanoid extends AbstractMonster
     {
 
     }
-
 }
