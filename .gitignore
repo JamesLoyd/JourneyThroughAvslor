@@ -9,3 +9,8 @@
 .idea/
 *.iml
 *.iws
+
+# builds
+build/
+obj/
+
