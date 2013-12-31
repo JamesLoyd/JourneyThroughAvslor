@@ -6,6 +6,10 @@ jar {
     }
 }
 
+repositories {
+        mavenCentral()
+}
+
 dependacies {
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
