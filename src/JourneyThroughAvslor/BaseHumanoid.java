@@ -18,25 +18,44 @@ public class BaseHumanoid extends AbstractMonster
 {
 
     //fields
-    private String nameOfGoblin;
+    private String nameOfHumanoid;
+    private String role;
     private double hitPoints;
     private double attackPoints;
     private double defensePoints;
+    private boolean canLoot;
 
     //Constructor
     public BaseHumanoid()
     {
-        nameOfGoblin = "Steve";
+        nameOfHumanoid = "Steve";
+        role = null;
         hitPoints = 100;
         attackPoints = 50;
         defensePoints = 50;
+        canLoot = true;
     }
-    public BaseHumanoid(String nameOfGoblin, double hitPoints, double attackPoints, double defensePoints)
+
+    public BaseHumanoid(String nameOfHumanoid, double hitPoints, double attackPoints, double defensePoints)
     {
-        this.nameOfGoblin = nameOfGoblin;
+        this.nameOfHumanoid = nameOfHumanoid;
         this.hitPoints = hitPoints;
         this.attackPoints = attackPoints;
         this.defensePoints = defensePoints;
+        canLoot = true;
+        role = null;
+    }
+
+    /* not adding a constructor option for "role" yet because we're not sure
+     * how the variable will be *used* */
+    public BaseHumanoid(String nameOfHumanoid, double hitPoints, double attackPoints, double defensePoints, boolean canLoot)
+    {
+        this.nameOfHumanoid = nameOfHumanoid;
+        this.hitPoints = hitPoints;
+        this.attackPoints = attackPoints;
+        this.defensePoints = defensePoints;
+        canLoot = true;
+        role = null;
     }
 
     @Override
@@ -53,13 +72,7 @@ public class BaseHumanoid extends AbstractMonster
     }
 
     @Override
-    public void buff(String stat)
-    {
-
-    }
-
-    @Override
-    public void debuff(String stat)
+    public void buff(String stat, double amount)
     {
 
     }
@@ -73,15 +86,26 @@ public class BaseHumanoid extends AbstractMonster
     @Override
     public String getRole()
     {
-        return null;
+        return role;
     }
 
     public String getName()
     {
-        return "Name";
+        return nameOfHumanoid;
     }
-    public void loot(boolean canHasLoot)
+
+    public void loot()
     {
 
+    }
+
+    public void interact()
+    {
+        System.out.println("Grrr.");
+    }
+
+    public String getFaction()
+    {
+        return null;
     }
 }
