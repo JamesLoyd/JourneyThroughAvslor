@@ -12,7 +12,7 @@ The Avslor team is looking to have the game blend elements of interactive ficito
 * James Loyd - Lead Developer and Project Manager
 * Sam Billings - Lore Master
 * Brian - Lore Master
-* Foxiepaws - Architect  and Core Developer
+* Joshua Theze (foxiepaws) - Architect and Core Developer
 * Terra-And-Luna - Core Developer
 
 ###Roles###
@@ -29,7 +29,7 @@ Send us a pull request or catch us on IRC.
 We are located at  \#JourneryThroughAvslor on [FreeNode](http://freenode.net/)
 
 ##License ##
-This software is licensed under [Apache v2.0](https://github.com/carharttjimmy/JourneyThroughAvslor/blob/master/LICENSE).
+This software is licensed under [Apache v2.0](https://github.com/Avslor/JourneyThroughAvslor/blob/master/LICENSE).
 
 ##Travis##
-[![Build Status](https://travis-ci.org/foxiepaws/JourneyThroughAvslor.png?branch=master)](https://travis-ci.org/foxiepaws/JourneyThroughAvslor)
+[![Build Status](https://travis-ci.org/Avslor/JourneyThroughAvslor.png?branch=master)](https://travis-ci.org/Avslor/JourneyThroughAvslor)
