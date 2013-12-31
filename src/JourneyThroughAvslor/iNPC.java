@@ -19,9 +19,15 @@ package JourneyThroughAvslor;
 */
 public interface iNPC
 {
-    abstract double attack(); 
-    abstract void raiseDefense();
-    abstract void raiseAttack();
+    abstract double attack();
+    abstract double receiveAttack();
+
+    /* buff and debuff take in the name of the stat to debuff and the method
+     * works out which stat to raise internally; seems better than having
+     * individual buff/debuff methods for each stat */
+    abstract void buff(String stat);
+    abstract void debuff(String stat);
+
     abstract void displayHealthPoints();
     abstract void loot(boolean canLoot);
     abstract String getRole();
