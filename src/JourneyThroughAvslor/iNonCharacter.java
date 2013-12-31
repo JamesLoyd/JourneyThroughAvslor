@@ -17,7 +17,7 @@ package JourneyThroughAvslor;
 /* This interface is a contract for all classes that are monsters in the game.
 * All monster classes must provide their own implementation for these methods.
 */
-public interface iNPC
+public interface iNonCharacter
 {
     abstract double attack();
     abstract double receiveAttack();
