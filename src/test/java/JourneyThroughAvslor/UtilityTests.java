@@ -17,3 +17,4 @@ public class UtilityTests {
     public void testAttackDamage() {
         AssertEquals("Failure, Math is wrong", JourneyThroughAvslor.Utility.getAttackDamage(2.0,2.0), 4.0);
     }
+}
