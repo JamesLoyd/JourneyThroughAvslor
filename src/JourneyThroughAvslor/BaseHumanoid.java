@@ -24,6 +24,7 @@ public class BaseHumanoid extends AbstractMonster
     private double attackPoints;
     private double defensePoints;
     private boolean canLoot;
+    private Faction[] factionList;
 
     //Constructor
     public BaseHumanoid()
@@ -44,10 +45,12 @@ public class BaseHumanoid extends AbstractMonster
         this.defensePoints = defensePoints;
         canLoot = true;
         role = null;
+        factionList = null;
     }
 
-    /* not adding a constructor option for "role" yet because we're not sure
-     * how the variable will be *used* */
+    /* not adding a constructor option for "role" or "factionList" yet 
+     * because we're not sure how the variables will be *used*
+     * just planting the seeds. */
     public BaseHumanoid(String nameOfHumanoid, double hitPoints, double attackPoints, double defensePoints, boolean canLoot)
     {
         this.nameOfHumanoid = nameOfHumanoid;
@@ -56,6 +59,7 @@ public class BaseHumanoid extends AbstractMonster
         this.defensePoints = defensePoints;
         canLoot = true;
         role = null;
+        factionList = null;
     }
 
     @Override
