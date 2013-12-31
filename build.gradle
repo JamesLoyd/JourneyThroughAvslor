@@ -6,4 +6,7 @@ jar {
     }
 }
 
-// vim: syntax=groovy
+dependacies {
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+// vim: filetype=groovy 
