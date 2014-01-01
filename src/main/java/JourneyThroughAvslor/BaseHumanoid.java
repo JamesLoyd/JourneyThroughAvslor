@@ -25,17 +25,6 @@ public class BaseHumanoid extends AbstractMonster
     private boolean canLoot;
     private Faction[] factionList;
 
-    //Constructor
-    public BaseHumanoid()
-    {
-        nameOfHumanoid = "Steve";
-        hitPoints = 100;
-        attackPoints = 50;
-        defensePoints = 50;
-        canLoot = true;
-        role = null;
-        factionList = null;
-    }
 
     public BaseHumanoid(String nameOfHumanoid, double hitPoints, double attackPoints, double defensePoints)
     {
