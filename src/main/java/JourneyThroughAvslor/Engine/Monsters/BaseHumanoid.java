@@ -1,4 +1,6 @@
-package JourneyThroughAvslor;
+package JourneyThroughAvslor.Engine.Monsters;
+
+import JourneyThroughAvslor.Engine.Shared.Faction;
 
 /*   Copyright 2013 James Loyd
  *

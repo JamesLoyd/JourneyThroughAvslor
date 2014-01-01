@@ -1,5 +1,4 @@
-package JourneyThroughAvslor;
-
+package JourneyThroughAvslor.Engine;
 /*   Copyright 2013 James Loyd
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,6 +13,10 @@ package JourneyThroughAvslor;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public abstract class AbstractMonster implements iNonCharacter
+public class Utility
 {
+    public static double getAttackDamage(double attackPoints, double frequency)
+    {
+       return attackPoints * frequency;
+    }
 }

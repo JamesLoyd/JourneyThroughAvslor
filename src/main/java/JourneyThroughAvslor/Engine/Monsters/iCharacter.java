@@ -1,4 +1,4 @@
-package JourneyThroughAvslor;
+package JourneyThroughAvslor.Engine.Monsters;
 
 /*   Copyright 2013 James Loyd
  *

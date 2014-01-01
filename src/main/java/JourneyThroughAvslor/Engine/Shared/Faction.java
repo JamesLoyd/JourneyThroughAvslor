@@ -1,4 +1,4 @@
-package JourneyThroughAvslor;
+package JourneyThroughAvslor.Engine.Shared;
 /*   Copyright 2013 James Loyd
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,5 +13,9 @@ package JourneyThroughAvslor;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class AbstractFaction {
+
+/* will probably be an abstract class later. this is just a placeholder */
+public class Faction
+{
+
 }

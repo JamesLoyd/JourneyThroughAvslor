@@ -1,4 +1,7 @@
 package JourneyThroughAvslor;
+
+import JourneyThroughAvslor.Engine.Monsters.BaseHumanoid;
+
 /*   Copyright 2013 James Loyd
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
