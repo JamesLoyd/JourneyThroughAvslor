@@ -14,6 +14,6 @@ public class UtilityTests {
 
     @Test
     public void testAttackDamage() {
-        org.junit.Assert.assertEquals(4.0,2.0,2.0);
+        org.junit.Assert.assertEquals(4.0, JourneyThroughAvslor.Utility.getAttackDamage(2.0,2.0),0.0);
     }
 }
