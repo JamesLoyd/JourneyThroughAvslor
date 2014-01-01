@@ -1,4 +1,4 @@
-package JourneyThroughAvslor;
+package test.java.JourneyThroughAvslor;
 
 import org.junit.Test;
 import org.junit.Ignore;
@@ -14,6 +14,6 @@ public class UtilityTests {
 
     @Test
     public void testAttackDamage() {
-        org.junit.Assert.assertEquals(4.0, JourneyThroughAvslor.Utility.getAttackDamage(2.0,2.0),0.0);
+        org.junit.Assert.assertEquals(4.0,2.0,2.0);
     }
 }
