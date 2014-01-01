@@ -1,4 +1,4 @@
-package test.java.JourneyThroughAvslor;
+package JourneyThroughAvslor;;
 
 import org.junit.Test;
 import org.junit.Ignore;
