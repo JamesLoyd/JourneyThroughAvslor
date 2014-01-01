@@ -31,5 +31,5 @@ We are located at  \#JourneryThroughAvslor on [FreeNode](http://freenode.net/)
 ##License ##
 This software is licensed under [Apache v2.0](https://github.com/Avslor/JourneyThroughAvslor/blob/master/LICENSE).
 
-##Travis##
+##[Travis](https://travis-ci.org/)##
 [![Build Status](https://travis-ci.org/Avslor/JourneyThroughAvslor.png?branch=master)](https://travis-ci.org/Avslor/JourneyThroughAvslor)
