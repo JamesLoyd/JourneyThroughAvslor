@@ -1,6 +1,8 @@
-package JourneyThroughAvslor;
+package JourneyThroughAvslor.Engine.Monsters;
 
-/*   Copyright 2013 James Loyd
+import JourneyThroughAvslor.Engine.Shared.Faction;
+
+/*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
  *   you may not use this file except in compliance with the License.
@@ -25,17 +27,6 @@ public class BaseHumanoid extends AbstractMonster
     private boolean canLoot;
     private Faction[] factionList;
 
-    //Constructor
-    public BaseHumanoid()
-    {
-        nameOfHumanoid = "Steve";
-        hitPoints = 100;
-        attackPoints = 50;
-        defensePoints = 50;
-        canLoot = true;
-        role = null;
-        factionList = null;
-    }
 
     public BaseHumanoid(String nameOfHumanoid, double hitPoints, double attackPoints, double defensePoints)
     {

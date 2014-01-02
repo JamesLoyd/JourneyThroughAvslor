@@ -1,5 +1,6 @@
-package JourneyThroughAvslor;
-/*   Copyright 2013 James Loyd
+package JourneyThroughAvslor.Engine.Monsters;
+
+/*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
  *   you may not use this file except in compliance with the License.
@@ -13,9 +14,6 @@ package JourneyThroughAvslor;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-
-/* will probably be an abstract class later. this is just a placeholder */
-public class Faction
+public abstract class AbstractMonster implements iNonCharacter
 {
-
 }
