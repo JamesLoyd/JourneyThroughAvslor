@@ -11,7 +11,6 @@ The Avslor team is looking to have the game blend elements of [interactive ficit
 ##Meet the team##
 * James Loyd (carharrtjimmy) - Lead Developer and Project Manager
 * Sam Billings - Lore Master
-* Brian - Lore Master
 * Joshua Theze (foxiepaws) - Architect and Core Developer
 * Terra-And-Luna - Core Developer
 
