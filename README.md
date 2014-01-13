@@ -9,9 +9,9 @@ So, hopefully soon, you will be able to dive into a realm of story, adventure, b
 The Avslor team is looking to have the game blend elements of [interactive ficiton](http://en.wikipedia.org/wiki/Interactive_fiction) and the turn based combat of a [JRPG](http://en.wikipedia.org/wiki/Japanese_role-playing_game).
 
 ##Meet the team##
-* James Loyd (@carharrtjimmy) - Lead Developer and Project Manager
+* James Loyd [(carharrtjimmy)](https://github.com/carharttjimmy) - Lead Developer and Project Manager
 * Sam Billings - Lore Master
-* Joshua Theze (@foxiepaws) - Architect and Core Developer
+* Joshua Theze [(foxiepaws)](https://github.com/foxiepaws) - Architect and Core Developer
 * Terra-And-Luna - Core Developer
 
 ###Roles###
