@@ -28,6 +28,9 @@ Send us a pull request or catch us on IRC.
 ##IRC Channel##
 We are located at  \#JourneyThroughAvslor on [FreeNode](http://freenode.net/). Come by sometime!
 
+##Website##
+[Avslor.org](http://avslor.org)
+
 ##License ##
 This software is licensed under [Apache v2.0](https://github.com/Avslor/JourneyThroughAvslor/blob/master/LICENSE).
 
