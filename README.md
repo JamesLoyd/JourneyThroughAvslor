@@ -31,6 +31,10 @@ We are located at  \#JourneyThroughAvslor on [FreeNode](http://freenode.net/). C
 ##Website##
 [Avslor.org](http://avslor.org)
 
+##We're on Trello##
+We use Trello for Project management. 
+[Check out our boards.](https://trello.com/avslor)
+
 ##License ##
 This software is licensed under [Apache v2.0](https://github.com/Avslor/JourneyThroughAvslor/blob/master/LICENSE).
 
