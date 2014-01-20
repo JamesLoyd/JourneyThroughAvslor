@@ -23,17 +23,17 @@ Every member of the core team has an important role.
 * Project Manager - charged with directing everyone towards goals and milestones.
 
 ##How to get involved ##
-Send us a pull request or catch us on IRC.
+One of the easiest ways to get involved is to come by our IRC channel and then we can give you information on Trello, how we handle pull requests and such. We hope to see you come by sometime. Our, information is listed below
 
-##IRC Channel##
+###IRC Channel###
 We are located at  \#JourneyThroughAvslor on [FreeNode](http://freenode.net/). Come by sometime!
+
+###We're on Trello###
+We use Trello for Project management. 
+[Check out our boards.](https://trello.com/avslor)
 
 ##Website##
 [Avslor.org](http://avslor.org)
-
-##We're on Trello##
-We use Trello for Project management. 
-[Check out our boards.](https://trello.com/avslor)
 
 ##License ##
 This software is licensed under [Apache v2.0](https://github.com/Avslor/JourneyThroughAvslor/blob/master/LICENSE).
