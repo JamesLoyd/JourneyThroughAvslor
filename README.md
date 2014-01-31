@@ -13,7 +13,6 @@ The Avslor team is looking to have the game blend elements of [interactive ficti
 * Sam Billings - Lore Master (Inactive)
 * Joshua Theze [(foxiepaws)](https://github.com/foxiepaws) - Architect and Core Developer
 * Terra-And-Luna [(Nyux)](https://github.com/nyux) - Core Developer
-* Nick Minter - Core Developer
 
 ###Roles###
 Every member of the core team has an important role.
