@@ -11,7 +11,7 @@ The Avslor team is looking to have the game blend elements of [interactive ficti
 ##Meet the team##
 * James Loyd [(carharrtjimmy)](https://github.com/carharttjimmy) - Lead Developer and Project Manager
 * Joshua Theze [(foxiepaws)](https://github.com/foxiepaws) - Architect and Core Developer
-* Terra-And-Luna [(Nyux)](https://github.com/nyux) - Core Developer
+* Terra-And-Luna [(Nyux)](https://github.com/nyux) - Core Developer (Inactive currently)
 
 ###Roles###
 Every member of the core team has an important role.
