@@ -43,7 +43,7 @@ This software is licensed under [Apache v2.0](https://github.com/Avslor/JourneyT
 ####Master Branch####
 [![Build Status](https://travis-ci.org/carharttjimmy/JourneyThroughAvslor.png?branch=master)](https://travis-ci.org/carharttjimmy/JourneyThroughAvslor)
 ####Canidate for Avslor-Master####
-[![Build Status](https://travis-ci.org/carharttjimmy/JourneyThroughAvslor.png?branch=old-mainjava)](https://travis-ci.org/carharttjimmy/JourneyThroughAvslor)
+[![Build Status](https://travis-ci.org/carharttjimmy/JourneyThroughAvslor.png?branch=canidate)](https://travis-ci.org/carharttjimmy/JourneyThroughAvslor)
 
 ###Side Note###
 This is simply my development repo as I work on adding new features and such.
