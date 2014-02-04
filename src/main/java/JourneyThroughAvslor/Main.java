@@ -1,6 +1,6 @@
 package JourneyThroughAvslor;
 
-import JourneyThroughAvslor.Engine.Monsters.BaseHumanoid;
+import JourneyThroughAvslor.Engine;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
@@ -20,19 +20,5 @@ public class Main
 {
     public static void main(String args[])
     {
-        System.out.println("Coming soon!");
-        System.out.println("Creating a Humanoid!");
-        
-        BaseHumanoid test = new BaseHumanoid("tester", 100, 18, 75, false);
-
-        System.out.println("The name of the Humanoid is: " + test.getName());
-        
-        System.out.print("The Humanoid says: ");
-        test.interact();
-
-        assert test.getRole() == null;
-        assert test.getFaction() == null;
-
-        System.out.println("Things seem to work, at least.");
     }
 }
