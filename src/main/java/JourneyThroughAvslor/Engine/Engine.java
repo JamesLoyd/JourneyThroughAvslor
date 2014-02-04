@@ -14,7 +14,7 @@ package JourneyThroughAvslor.Engine;
  *   limitations under the License.
  */
 
-public class EngineRunnable implements Runnable
+public class Engine implements Runnable
 {
     public void run()
     {
