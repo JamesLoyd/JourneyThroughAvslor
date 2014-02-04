@@ -13,7 +13,7 @@ package JourneyThroughAvslor.Engine.Map;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
- Public Class MapEngine implements Runnable
+ public Class MapEngine implements Runnable
  {
     public void run()
     {
