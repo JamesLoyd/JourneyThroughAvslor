@@ -20,4 +20,9 @@ public class Engine implements Runnable
     {
         System.out.println("Maybe the engine will occur in this thread!");
     }
+    
+    Public Engine()
+    {
+        //null
+    }
 }
