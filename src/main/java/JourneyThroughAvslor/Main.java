@@ -1,6 +1,6 @@
 package JourneyThroughAvslor;
 
-import JourneyThroughAvslor.Engine.Monsters.BaseHumanoid;
+import JourneyThroughAvslor.Engine;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
@@ -20,5 +20,6 @@ public class Main
 {
     public static void main(String args[])
     {
+        Engine();
     }
 }
