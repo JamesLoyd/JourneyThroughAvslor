@@ -27,7 +27,7 @@ One of the easiest ways to get involved is to come by our IRC channel and then w
 We are located at  \#JourneyThroughAvslor on [FreeNode](http://freenode.net/). Come by sometime!
 
 ###We're on Trello###
-We use Trello for Project management. 
+We use Trello for Project management.
 [Check out our boards.](https://trello.com/avslor)
 
 ##Website##
