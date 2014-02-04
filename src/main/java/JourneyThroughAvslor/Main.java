@@ -20,6 +20,6 @@ public class Main
 {
     public static void main(String args[])
     {
-        Engine myengine = new Engine();
+        (new Thread(new Engine())).start();
     }
 }
