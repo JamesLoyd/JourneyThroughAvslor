@@ -37,13 +37,8 @@ We use Trello for Project management.
 This software is licensed under [Apache v2.0](https://github.com/Avslor/JourneyThroughAvslor/blob/master/LICENSE).
 
 ##[Travis](https://travis-ci.org/) (A Continuous Integration Build Service)##
-###Avslor's Build Status###
 [![Build Status](https://travis-ci.org/Avslor/JourneyThroughAvslor.png?branch=master)](https://travis-ci.org/Avslor/JourneyThroughAvslor)
-###My current Build Status###
-####Master Branch####
-[![Build Status](https://travis-ci.org/carharttjimmy/JourneyThroughAvslor.png?branch=master)](https://travis-ci.org/carharttjimmy/JourneyThroughAvslor)
-####Canidate for Avslor-Master####
-[![Build Status](https://travis-ci.org/carharttjimmy/JourneyThroughAvslor.png?branch=canidate)](https://travis-ci.org/carharttjimmy/JourneyThroughAvslor)
+
 
 ###Side Note###
 This is simply my development repo as I work on adding new features and such.
