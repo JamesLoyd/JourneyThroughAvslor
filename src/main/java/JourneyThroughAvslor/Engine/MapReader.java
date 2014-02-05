@@ -15,4 +15,12 @@ package JourneyThroughAvslor.Engine;
  */
 public class MapReader
 {
+    private MapReader(String file)
+    {
+
+    }
+
+    public static MapReader createMapReader(String file) {
+        return new MapReader(file);
+    }
 }
