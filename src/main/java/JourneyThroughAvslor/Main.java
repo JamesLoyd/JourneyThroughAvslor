@@ -1,5 +1,10 @@
 package JourneyThroughAvslor;
 
+<<<<<<< HEAD
+import JourneyThroughAvslor.Engine.GameEngine;
+
+=======
+>>>>>>> candidate
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,5 +23,6 @@ public class Main
 {
     public static void main(String args[])
     {
+        (new Thread(new GameEngine())).start();
     }
 }
