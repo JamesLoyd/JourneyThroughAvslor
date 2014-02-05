@@ -13,15 +13,13 @@ package JourneyThroughAvslor.Engine;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class Utility
+public class StoryReader
 {
-    public static double getAttackDamage(double attackPoints, double frequency)
+    private StoryReader()
     {
-       return attackPoints * frequency;
     }
 
-    public static void getProjectInfo()
-    {
-        System.out.println("This is an open source project....");
+    public static StoryReader createStoryReader() {
+        return new StoryReader();
     }
 }
