@@ -19,4 +19,9 @@ public class Utility
     {
        return attackPoints * frequency;
     }
+
+    public static void getProjectInfo()
+    {
+        System.out.println("This is an open source project....")
+    }
 }
