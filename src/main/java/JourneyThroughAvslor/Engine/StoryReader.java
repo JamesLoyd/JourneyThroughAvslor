@@ -13,14 +13,14 @@ package JourneyThroughAvslor.Engine;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-
-public class GameEngine implements Runnable
+public class StoryReader
 {
-    public void run()
+    private StoryReader()
     {
-        System.out.println("Let's Get this thread going");
-        MapReader engineMapReader = MapReader.createMapReader("test");
-        StoryReader engineStoryReader = StoryReader.createStoryReader();
-        engineMapReader.returnStatus();
+
+    }
+
+    public static StoryReader createStoryReader() {
+        return new StoryReader();
     }
 }
