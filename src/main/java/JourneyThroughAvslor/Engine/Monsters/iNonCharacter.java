@@ -19,8 +19,8 @@ package JourneyThroughAvslor.Engine.Monsters;
 */
 public interface iNonCharacter
 {
-    abstract double attack();
-    abstract double receiveAttack();
+     double attack();
+     double receiveAttack();
 
     /* buff and debuff take in the name of the stat to debuff and the method
      * works out which stat to raise internally; seems better than having
@@ -29,11 +29,11 @@ public interface iNonCharacter
      * amount is... currently vague. undecided as to whether it refers to
      * a multiplier applied to the stat, or a straight increase/decrease
      * to that stat. */
-    abstract void buff(String stat, double amount);
+    void buff(String stat, double amount);
 
-    abstract void displayHealthPoints();
-    abstract void loot();
-    abstract String getRole();
-    abstract void interact();
-    abstract String getFaction();
+    void displayHealthPoints();
+    void loot();
+    String getRole();
+    void interact();
+    String getFaction();
 }
