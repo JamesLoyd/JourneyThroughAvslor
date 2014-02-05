@@ -20,8 +20,11 @@ public class Utility
        return attackPoints * frequency;
     }
 
+    /*
+     * This will probably need to be refactored to read a change log or something. Or simply to drive a window of the UI
+     * that we will call about.
+     */
     public static void getProjectInfo()
     {
-        System.out.println("This is an open source project....");
     }
 }
