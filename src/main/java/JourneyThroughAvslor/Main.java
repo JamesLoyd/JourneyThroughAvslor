@@ -1,5 +1,7 @@
 package JourneyThroughAvslor;
 
+import JourneyThroughAvslor.Engine.GameEngine;
+
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,6 +20,6 @@ public class Main
 {
     public static void main(String args[])
     {
-        //some call to the engine no doubt will happen
+        (new Thread(new GameEngine())).start();
     }
 }
