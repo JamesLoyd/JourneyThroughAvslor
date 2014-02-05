@@ -17,7 +17,6 @@ public class MapReader
 {
     private MapReader(String file)
     {
-
     }
 
     public void returnStatus()

@@ -17,7 +17,6 @@ public class StoryReader
 {
     private StoryReader()
     {
-
     }
 
     public static StoryReader createStoryReader() {
