@@ -3,4 +3,4 @@ language: java
 notifications:
      irc:
          channels:
-             -"asimov.freenode.net#JourneyThroughAvslor"
+             -"dickson.freenode.net#JourneyThroughAvslor"
