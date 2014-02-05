@@ -1,19 +1,5 @@
 language: java
 
 notifications:
-<<<<<<< HEAD
-<<<<<<< HEAD
     irc:
       - "chat.freenode.net#JourneyThroughAvslor"
-=======
-  irc:
-    - "Chat.freenode.net#JourneyThroughAvslor"
->>>>>>> 6cb7508a04d00b0ff45ff650ffb55e8c07c21031
-=======
-     irc: "dickson.freenode.net#JourneyThroughAvslor"
-=======
-  irc:
-    - "Chat.freenode.net#JourneyThroughAvslor"
->>>>>>> e2901174f3f47ffde3397118e49387ae01ff586b
-        
->>>>>>> 6cb7508a04d00b0ff45ff650ffb55e8c07c21031
