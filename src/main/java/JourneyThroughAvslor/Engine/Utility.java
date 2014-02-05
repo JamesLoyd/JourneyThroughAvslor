@@ -22,6 +22,6 @@ public class Utility
 
     public static void getProjectInfo()
     {
-        System.out.println("This is an open source project....")
+        System.out.println("This is an open source project....");
     }
 }
