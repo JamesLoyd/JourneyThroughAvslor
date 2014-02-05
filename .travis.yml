@@ -2,5 +2,5 @@ language: java
 
 notifications:
   irc:
-    - "chat.freenode.net#JourneyThroughAvslor"
+    - "Chat.freenode.net#JourneyThroughAvslor"
         
