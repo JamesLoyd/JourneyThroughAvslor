@@ -18,6 +18,6 @@ public class GameEngine implements Runnable
 {
     public void run()
     {
-        System.out.println("Maybe the engine will occur in this thread!");
+        System.out.println("Let's Get this thread going");
     }
 }
