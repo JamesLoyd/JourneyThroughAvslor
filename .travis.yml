@@ -1,9 +1,6 @@
 language: java
 
 notifications:
-<<<<<<< HEAD
-     irc: "dickson.freenode.net#JourneyThroughAvslor"
-=======
-  irc:
-    - "Chat.freenode.net#JourneyThroughAvslor"
+
+     irc: "chat.freenode.net#JourneyThroughAvslor"
         
