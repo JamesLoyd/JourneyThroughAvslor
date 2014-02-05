@@ -19,6 +19,7 @@ public class GameEngine implements Runnable
     public void run()
     {
         System.out.println("Let's Get this thread going");
-        MapReader.createMapReader("test");
+        MapReader engineMapReader = MapReader.createMapReader("test");
+        engineMapReader.returnStatus();
     }
 }
