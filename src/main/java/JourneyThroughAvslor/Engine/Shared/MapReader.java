@@ -1,4 +1,7 @@
-package JourneyThroughAvslor.Engine;
+package JourneyThroughAvslor.Engine.Shared;
+
+import org.json.JSONObject;
+
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,15 +16,19 @@ package JourneyThroughAvslor.Engine;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class Utility
+public class MapReader
 {
-    public static double getAttackDamage(double attackPoints, double frequency)
+    private MapReader(String file)
     {
-       return attackPoints * frequency;
+        JSONObject myTest = new JSONObject();
     }
 
-    public static void getProjectInfo()
+    public void returnStatus()
     {
-        System.out.println("This is an open source project....");
+        System.out.println("Not implemented yet");
+    }
+
+    public static MapReader createMapReader(String file) {
+        return new MapReader(file);
     }
 }

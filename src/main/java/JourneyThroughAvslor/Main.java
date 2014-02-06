@@ -1,8 +1,13 @@
 package JourneyThroughAvslor;
+import JourneyThroughAvslor.Engine.Shared.GameEngine;
+import java.util.Scanner;
 
+<<<<<<< HEAD
 import JourneyThroughAvslor.Engine.GameEngine;
 
 
+=======
+>>>>>>> master
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,6 +26,13 @@ public class Main
 {
     public static void main(String args[])
     {
-        (new Thread(new GameEngine())).start();
+        String answer;
+        Scanner keyBoard = new Scanner(System.in);
+        System.out.println("Press Y to play the game or press no to exit");
+        answer = keyBoard.next();
+        if (answer.toLowerCase().equals("y"))
+        {
+            (new Thread(new GameEngine())).start();
+        }
     }
 }

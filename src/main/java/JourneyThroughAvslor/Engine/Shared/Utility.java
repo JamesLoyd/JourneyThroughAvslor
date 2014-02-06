@@ -1,4 +1,4 @@
-package JourneyThroughAvslor.Engine;
+package JourneyThroughAvslor.Engine.Shared;
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,18 +13,18 @@ package JourneyThroughAvslor.Engine;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class MapReader
+public class Utility
 {
-    private MapReader(String file)
+    public static double getAttackDamage(double attackPoints, double frequency)
     {
+       return attackPoints * frequency;
     }
 
-    public void returnStatus()
+    /*
+     * This will probably need to be refactored to read a change log or something. Or simply to drive a window of the UI
+     * that we will call about.
+     */
+    public static void getProjectInfo()
     {
-        System.out.println("Not implemented yet");
-    }
-
-    public static MapReader createMapReader(String file) {
-        return new MapReader(file);
     }
 }
