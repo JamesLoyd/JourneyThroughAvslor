@@ -1,5 +1,5 @@
 package JourneyThroughAvslor.Engine.Shared;
-import org.json.JSONObject;
+
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,9 +18,8 @@ public class MapReader
 {
     private MapReader(String file)
     {
-        JSONObject myTest = new JSONObject();
-    }
 
+    }
     public void returnStatus()
     {
         System.out.println("Not implemented yet");
