@@ -1,4 +1,4 @@
-package JourneyThroughAvslor.Engine;
+package JourneyThroughAvslor.Engine.Shared;
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,13 +13,18 @@ package JourneyThroughAvslor.Engine;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class StoryReader
+public class MapReader
 {
-    private StoryReader()
+    private MapReader(String file)
     {
     }
 
-    public static StoryReader createStoryReader() {
-        return new StoryReader();
+    public void returnStatus()
+    {
+        System.out.println("Not implemented yet");
+    }
+
+    public static MapReader createMapReader(String file) {
+        return new MapReader(file);
     }
 }

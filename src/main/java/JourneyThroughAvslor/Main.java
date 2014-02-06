@@ -1,5 +1,5 @@
 package JourneyThroughAvslor;
-import JourneyThroughAvslor.Engine.GameEngine;
+import JourneyThroughAvslor.Engine.Shared.GameEngine;
 import java.util.Scanner;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
