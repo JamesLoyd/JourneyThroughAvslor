@@ -41,5 +41,4 @@ This software is licensed under [Apache v2.0](https://github.com/Avslor/JourneyT
 
 
 
-###Side Note###
-This is simply my development repo as I work on adding new features and such.
+
