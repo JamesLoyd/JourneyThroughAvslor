@@ -16,6 +16,10 @@ import org.json.JSONObject;
  */
 public class MapReader
 {
+    private MapReader(String file)
+    {
+
+    }
     public void returnStatus()
     {
         System.out.println("Not implemented yet");
