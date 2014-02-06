@@ -1,4 +1,4 @@
-package JourneyThroughAvslor.Engine;
+package JourneyThroughAvslor.Engine.Shared;
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,6 +13,13 @@ package JourneyThroughAvslor.Engine;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public interface iGameState
+public class StoryReader
 {
+    private StoryReader()
+    {
+    }
+
+    public static StoryReader createStoryReader() {
+        return new StoryReader();
+    }
 }
