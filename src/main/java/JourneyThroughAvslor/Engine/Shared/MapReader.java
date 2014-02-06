@@ -16,11 +16,6 @@ import org.json.JSONObject;
  */
 public class MapReader
 {
-    private MapReader(String file)
-    {
-        JSONObject myTest = new JSONObject();
-    }
-
     public void returnStatus()
     {
         System.out.println("Not implemented yet");
