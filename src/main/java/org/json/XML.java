@@ -1,7 +1,8 @@
 package org.json;
 
+
 /*
-Copyright (c) 2002 JSON.org
+Copyright (c) 2002 org.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -30,7 +31,7 @@ import java.util.Iterator;
 /**
  * This provides static methods to convert an XML text into a JSONObject,
  * and to covert a JSONObject into an XML text.
- * @author JSON.org
+ * @author org.org
  * @version 2013-11-12
  */
 public class XML {
@@ -298,7 +299,7 @@ public class XML {
      * convert plus forms, octal forms, hex forms, or E forms lacking decimal
      * points.
      * @param string A String.
-     * @return A simple JSON value.
+     * @return A simple org value.
      */
     public static Object stringToValue(String string) {
         if ("true".equalsIgnoreCase(string)) {
@@ -338,9 +339,9 @@ public class XML {
     /**
      * Convert a well-formed (but not necessarily valid) XML string into a
      * JSONObject. Some information may be lost in this transformation
-     * because JSON is a data format and XML is a document format. XML uses
-     * elements, attributes, and content text, while JSON uses unordered
-     * collections of name/value pairs and arrays of values. JSON does not
+     * because org is a data format and XML is a document format. XML uses
+     * elements, attributes, and content text, while org uses unordered
+     * collections of name/value pairs and arrays of values. org does not
      * does not like to distinguish between elements and attributes.
      * Sequences of similar elements are represented as JSONArrays. Content
      * text may be placed in a "content" member. Comments, prologs, DTDs, and

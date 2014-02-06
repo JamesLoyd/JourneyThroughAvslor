@@ -1,7 +1,8 @@
 package org.json;
 
+
 /*
- Copyright (c) 2002 JSON.org
+ Copyright (c) 2002 org.org
 
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
@@ -43,8 +44,8 @@ import java.util.Map;
  * <code>Number</code>, <code>String</code>, or the
  * <code>JSONObject.NULL object</code>.
  * <p>
- * The constructor can convert a JSON text into a Java object. The
- * <code>toString</code> method converts to JSON text.
+ * The constructor can convert a org text into a Java object. The
+ * <code>toString</code> method converts to org text.
  * <p>
  * A <code>get</code> method returns a value if one can be found, and throws an
  * exception if one cannot be found. An <code>opt</code> method returns a
@@ -57,7 +58,7 @@ import java.util.Map;
  * coercion for you.
  * <p>
  * The texts produced by the <code>toString</code> methods strictly conform to
- * JSON syntax rules. The constructors are more forgiving in the texts they will
+ * org syntax rules. The constructors are more forgiving in the texts they will
  * accept:
  * <ul>
  * <li>An extra <code>,</code>&nbsp;<small>(comma)</small> may appear just
@@ -74,7 +75,7 @@ import java.util.Map;
  * <code>null</code>.</li>
  * </ul>
  *
- * @author JSON.org
+ * @author org.org
  * @version 2013-04-18
  */
 public class JSONArray {
@@ -131,7 +132,7 @@ public class JSONArray {
     }
 
     /**
-     * Construct a JSONArray from a source JSON text.
+     * Construct a JSONArray from a source org text.
      *
      * @param source
      *            A string that begins with <code>[</code>&nbsp;<small>(left
@@ -842,9 +843,9 @@ public class JSONArray {
     }
 
     /**
-     * Make a JSON text of this JSONArray. For compactness, no unnecessary
+     * Make a org text of this JSONArray. For compactness, no unnecessary
      * whitespace is added. If it is not possible to produce a syntactically
-     * correct JSON text then null will be returned instead. This could occur if
+     * correct org text then null will be returned instead. This could occur if
      * the array contains an invalid number.
      * <p>
      * Warning: This method assumes that the data structure is acyclical.
@@ -861,7 +862,7 @@ public class JSONArray {
     }
 
     /**
-     * Make a prettyprinted JSON text of this JSONArray. Warning: This method
+     * Make a prettyprinted org text of this JSONArray. Warning: This method
      * assumes that the data structure is acyclical.
      *
      * @param indentFactor
@@ -880,7 +881,7 @@ public class JSONArray {
     }
 
     /**
-     * Write the contents of the JSONArray as JSON text to a writer. For
+     * Write the contents of the JSONArray as org text to a writer. For
      * compactness, no whitespace is added.
      * <p>
      * Warning: This method assumes that the data structure is acyclical.
@@ -893,7 +894,7 @@ public class JSONArray {
     }
 
     /**
-     * Write the contents of the JSONArray as JSON text to a writer. For
+     * Write the contents of the JSONArray as org text to a writer. For
      * compactness, no whitespace is added.
      * <p>
      * Warning: This method assumes that the data structure is acyclical.

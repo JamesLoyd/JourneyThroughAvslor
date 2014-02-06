@@ -1,5 +1,6 @@
 package org.json;
 
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -8,7 +9,7 @@ import java.io.Reader;
 import java.io.StringReader;
 
 /*
-Copyright (c) 2002 JSON.org
+Copyright (c) 2002 org.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -34,8 +35,8 @@ SOFTWARE.
 /**
  * A JSONTokener takes a source string and extracts characters and tokens from
  * it. It is used by the JSONObject and JSONArray constructors to parse
- * JSON source strings.
- * @author JSON.org
+ * org source strings.
+ * @author org.org
  * @version 2012-02-16
  */
 public class JSONTokener {
@@ -239,7 +240,7 @@ public class JSONTokener {
 
     /**
      * Return the characters up to the next close quote character.
-     * Backslash processing is done. The formal JSON format does not
+     * Backslash processing is done. The formal org format does not
      * allow strings in single quotes, but an implementation is allowed to
      * accept them.
      * @param quote The quoting character, either

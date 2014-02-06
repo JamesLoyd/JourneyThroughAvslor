@@ -1,9 +1,10 @@
 package org.json;
 
+
 /**
- * The JSONException is thrown by the JSON.org classes when things are amiss.
+ * The JSONException is thrown by the org.org classes when things are amiss.
  *
- * @author JSON.org
+ * @author org.org
  * @version 2013-02-10
  */
 public class JSONException extends RuntimeException {

@@ -1,7 +1,8 @@
 package org.json;
 
+
 /*
-Copyright (c) 2008 JSON.org
+Copyright (c) 2008 org.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -32,7 +33,7 @@ import java.util.Iterator;
  * JSONObject, and to covert a JSONArray or JSONObject into an XML text using
  * the JsonML transform.
  *
- * @author JSON.org
+ * @author org.org
  * @version 2012-03-28
  */
 public class JSONML {

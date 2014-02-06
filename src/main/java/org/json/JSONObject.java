@@ -1,7 +1,7 @@
 package org.json;
 
 /*
- Copyright (c) 2002 JSON.org
+ Copyright (c) 2002 org.org
 
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
@@ -48,10 +48,10 @@ import java.util.Set;
  * values by name. The values can be any of these types: <code>Boolean</code>,
  * <code>JSONArray</code>, <code>JSONObject</code>, <code>Number</code>,
  * <code>String</code>, or the <code>JSONObject.NULL</code> object. A
- * JSONObject constructor can be used to convert an external form JSON text
+ * JSONObject constructor can be used to convert an external form org text
  * into an internal form whose values can be retrieved with the
  * <code>get</code> and <code>opt</code> methods, or to convert values into a
- * JSON text using the <code>put</code> and <code>toString</code> methods. A
+ * org text using the <code>put</code> and <code>toString</code> methods. A
  * <code>get</code> method returns a value if one can be found, and throws an
  * exception if one cannot be found. An <code>opt</code> method returns a
  * default value instead of throwing an exception, and so is useful for
@@ -68,13 +68,13 @@ import java.util.Set;
  *
  * <pre>
  * myString = new JSONObject()
- *         .put(&quot;JSON&quot;, &quot;Hello, World!&quot;).toString();
+ *         .put(&quot;org&quot;, &quot;Hello, World!&quot;).toString();
  * </pre>
  *
- * produces the string <code>{"JSON": "Hello, World"}</code>.
+ * produces the string <code>{"org": "Hello, World"}</code>.
  * <p>
  * The texts produced by the <code>toString</code> methods strictly conform to
- * the JSON syntax rules. The constructors are more forgiving in the texts they
+ * the org syntax rules. The constructors are more forgiving in the texts they
  * will accept:
  * <ul>
  * <li>An extra <code>,</code>&nbsp;<small>(comma)</small> may appear just
@@ -89,7 +89,7 @@ import java.util.Set;
  * or <code>null</code>.</li>
  * </ul>
  *
- * @author JSON.org
+ * @author org.org
  * @version 2013-06-17
  */
 public class JSONObject {
@@ -306,7 +306,7 @@ public class JSONObject {
     }
 
     /**
-     * Construct a JSONObject from a source JSON text string. This is the most
+     * Construct a JSONObject from a source org text string. This is the most
      * commonly used JSONObject constructor.
      *
      * @param source
@@ -1191,12 +1191,12 @@ public class JSONObject {
     /**
      * Produce a string in double quotes with backslash sequences in all the
      * right places. A backslash will be inserted within </, producing <\/,
-     * allowing JSON text to be delivered in HTML. In JSON text, a string cannot
+     * allowing org text to be delivered in HTML. In org text, a string cannot
      * contain a control character or an unescaped quote or backslash.
      *
      * @param string
      *            A String
-     * @return A String correctly formatted for insertion in a JSON text.
+     * @return A String correctly formatted for insertion in a org text.
      */
     public static String quote(String string) {
         StringWriter sw = new StringWriter();
@@ -1287,7 +1287,7 @@ public class JSONObject {
      *
      * @param string
      *            A String.
-     * @return A simple JSON value.
+     * @return A simple org value.
      */
     public static Object stringToValue(String string) {
         Double d;
@@ -1347,12 +1347,12 @@ public class JSONObject {
             if (o instanceof Double) {
                 if (((Double) o).isInfinite() || ((Double) o).isNaN()) {
                     throw new JSONException(
-                            "JSON does not allow non-finite numbers.");
+                            "org does not allow non-finite numbers.");
                 }
             } else if (o instanceof Float) {
                 if (((Float) o).isInfinite() || ((Float) o).isNaN()) {
                     throw new JSONException(
-                            "JSON does not allow non-finite numbers.");
+                            "org does not allow non-finite numbers.");
                 }
             }
         }
@@ -1381,8 +1381,8 @@ public class JSONObject {
     }
 
     /**
-     * Make a JSON text of this JSONObject. For compactness, no whitespace is
-     * added. If this would not result in a syntactically correct JSON text,
+     * Make a org text of this JSONObject. For compactness, no whitespace is
+     * added. If this would not result in a syntactically correct org text,
      * then null will be returned instead.
      * <p>
      * Warning: This method assumes that the data structure is acyclical.
@@ -1401,7 +1401,7 @@ public class JSONObject {
     }
 
     /**
-     * Make a prettyprinted JSON text of this JSONObject.
+     * Make a prettyprinted org text of this JSONObject.
      * <p>
      * Warning: This method assumes that the data structure is acyclical.
      *
@@ -1422,9 +1422,9 @@ public class JSONObject {
     }
 
     /**
-     * Make a JSON text of an Object value. If the object has an
+     * Make a org text of an Object value. If the object has an
      * value.toJSONString() method, then that method will be used to produce the
-     * JSON text. The method is required to produce a strictly conforming text.
+     * org text. The method is required to produce a strictly conforming text.
      * If the object does not contain a toJSONString method (which is the most
      * common case), then a text will be produced by other means. If the value
      * is an array or Collection, then a JSONArray will be made from it and its
@@ -1531,7 +1531,7 @@ public class JSONObject {
     }
 
     /**
-     * Write the contents of the JSONObject as JSON text to a writer. For
+     * Write the contents of the JSONObject as org text to a writer. For
      * compactness, no whitespace is added.
      * <p>
      * Warning: This method assumes that the data structure is acyclical.
@@ -1583,7 +1583,7 @@ public class JSONObject {
     }
 
     /**
-     * Write the contents of the JSONObject as JSON text to a writer. For
+     * Write the contents of the JSONObject as org text to a writer. For
      * compactness, no whitespace is added.
      * <p>
      * Warning: This method assumes that the data structure is acyclical.

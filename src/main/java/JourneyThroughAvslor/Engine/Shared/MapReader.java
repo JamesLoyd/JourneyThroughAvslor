@@ -1,4 +1,5 @@
 package JourneyThroughAvslor.Engine.Shared;
+
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,6 +18,7 @@ public class MapReader
 {
     private MapReader(String file)
     {
+
     }
 
     public void returnStatus()

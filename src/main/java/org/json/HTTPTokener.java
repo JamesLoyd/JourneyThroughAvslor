@@ -1,7 +1,8 @@
 package org.json;
 
+
 /*
-Copyright (c) 2002 JSON.org
+Copyright (c) 2002 org.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -27,7 +28,7 @@ SOFTWARE.
 /**
  * The HTTPTokener extends the JSONTokener to provide additional methods
  * for the parsing of HTTP headers.
- * @author JSON.org
+ * @author org.org
  * @version 2012-11-13
  */
 public class HTTPTokener extends JSONTokener {
