@@ -14,8 +14,7 @@ public class JSONException extends RuntimeException {
     /**
      * Constructs a JSONException with an explanatory message.
      *
-     * @param message
-     *            Detail about the reason for the exception.
+     * @param message Detail about the reason for the exception.
      */
     public JSONException(String message) {
         super(message);
@@ -34,7 +33,7 @@ public class JSONException extends RuntimeException {
      * or unknown.
      *
      * @returns the cause of this exception or null if the cause is nonexistent
-     *          or unknown.
+     * or unknown.
      */
     public Throwable getCause() {
         return this.cause;
