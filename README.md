@@ -27,7 +27,7 @@ One of the easiest ways to get involved is to come by our IRC channel and then w
 We are located at  \#JourneyThroughAvslor on [FreeNode](http://freenode.net/). Come by sometime!
 
 ###We're on Trello###
-We use Trello for Project management. 
+We use Trello for Project management.
 [Check out our boards.](https://trello.com/avslor)
 
 ##Website##
@@ -38,3 +38,8 @@ This software is licensed under [Apache v2.0](https://github.com/Avslor/JourneyT
 
 ##[Travis](https://travis-ci.org/) (A Continuous Integration Build Service)##
 [![Build Status](https://travis-ci.org/Avslor/JourneyThroughAvslor.png?branch=master)](https://travis-ci.org/Avslor/JourneyThroughAvslor)
+
+
+
+###Side Note###
+This is simply my development repo as I work on adding new features and such.
