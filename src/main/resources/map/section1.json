@@ -1,9 +1,8 @@
-
 [
     [
         {
-            "east": "",
-            "south": "",
+            "east": "Monster",
+            "south": "Swamp",
             "description": ""
         },
         {
