@@ -23,9 +23,4 @@ public class MapReader
     public static MapReader createMapReader() {
         return new MapReader();
     }
-
-    public JSONObject loadMap()
-    {
-        return new JSONObject();
-    }
 }
