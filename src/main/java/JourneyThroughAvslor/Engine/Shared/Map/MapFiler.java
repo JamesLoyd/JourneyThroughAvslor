@@ -1,4 +1,7 @@
 package JourneyThroughAvslor.Engine.Shared.Map;
+
+import org.json.JSONObject;
+
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,5 +21,16 @@ public class MapFiler
     public MapFiler()
     {
 
+    }
+
+    public MapFiler[] getMapFile()
+    {
+        int arraySize = 5;
+        return new MapFiler[5];
+    }
+    public int getMapSize()
+    {
+        MapFiler[] array = getMapFile();
+        return array.length;
     }
 }

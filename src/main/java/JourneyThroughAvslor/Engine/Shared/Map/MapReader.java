@@ -16,11 +16,23 @@ import org.json.JSONObject;
  */
 public class MapReader
 {
-    private MapReader()
+    MapFiler fileService;
+
+    private MapReader(MapFiler fileService)
     {
 
     }
-    public static MapReader createMapReader() {
-        return new MapReader();
+
+    public static MapReader createMapReader(MapFiler fileService) {
+        return new MapReader(fileService);
     }
+
+    //methods
+    public Map returnMap()
+    {
+        JSONObject temp = new JSONObject();
+        fileService.getMapFile();
+        return new Map(temp);
+    }
+
 }
