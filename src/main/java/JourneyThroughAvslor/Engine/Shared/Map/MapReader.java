@@ -1,4 +1,5 @@
-package JourneyThroughAvslor.Engine.Shared;
+package JourneyThroughAvslor.Engine.Shared.Map;
+import org.json.JSONObject;
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,6 +14,18 @@ package JourneyThroughAvslor.Engine.Shared;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public abstract class AbstractMap
+public class MapReader
 {
+    private MapReader()
+    {
+
+    }
+    public static MapReader createMapReader() {
+        return new MapReader();
+    }
+
+    public JSONObject loadMap()
+    {
+        return new JSONObject();
+    }
 }
