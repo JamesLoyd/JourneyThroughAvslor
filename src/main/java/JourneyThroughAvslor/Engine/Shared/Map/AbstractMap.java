@@ -18,9 +18,4 @@ import org.json.JSONObject;
  */
 public abstract class AbstractMap
 {
-
-    public JSONObject loadMap()
-    {
-        return new JSONObject();
-    }
 }

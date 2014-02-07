@@ -1,5 +1,7 @@
 package JourneyThroughAvslor.Engine.Shared.Map;
+
 import org.json.JSONObject;
+
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,13 +16,18 @@ import org.json.JSONObject;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class MapReader
+public class Map extends AbstractMap
 {
-    private MapReader()
-    {
+    //Fields
+    String nameOfMap;
 
+    public Map(JSONObject mapSection)
+    {
+       nameOfMap = mapSection.get("name").toString();
     }
-    public static MapReader createMapReader() {
-        return new MapReader();
+
+    public String getNameOfMap()
+    {
+        return nameOfMap;
     }
 }
