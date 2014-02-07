@@ -13,5 +13,6 @@ package JourneyThroughAvslor.Engine.Shared;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public abstract class AbstractMap {
+public abstract class AbstractMap
+{
 }
