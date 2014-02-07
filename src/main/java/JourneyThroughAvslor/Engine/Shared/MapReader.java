@@ -1,5 +1,5 @@
 package JourneyThroughAvslor.Engine.Shared;
-
+import org.json.JSONObject;
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,16 +16,11 @@ package JourneyThroughAvslor.Engine.Shared;
  */
 public class MapReader
 {
-    private MapReader(String file)
+    private MapReader()
     {
 
     }
-    public void returnStatus()
-    {
-        System.out.println("Not implemented yet");
-    }
-
-    public static MapReader createMapReader(String file) {
-        return new MapReader(file);
+    public static MapReader createMapReader() {
+        return new MapReader();
     }
 }
