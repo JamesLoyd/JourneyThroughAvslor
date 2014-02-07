@@ -14,6 +14,8 @@ package JourneyThroughAvslor.Engine.Shared;
  *   limitations under the License.
  */
 
+import JourneyThroughAvslor.Engine.Shared.Map.MapReader;
+
 public class GameEngine implements Runnable
 {
     public void run()

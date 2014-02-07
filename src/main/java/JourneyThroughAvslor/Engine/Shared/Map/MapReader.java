@@ -14,7 +14,7 @@ import org.json.JSONObject;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class MapReader
+public class MapReader extends AbstractMap
 {
     private MapReader()
     {
