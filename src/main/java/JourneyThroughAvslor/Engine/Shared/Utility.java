@@ -30,6 +30,11 @@ public class Utility
     {
     }
 
+    public static JSONObject getJSONOBject()
+    {
+        //for the time being
+        return new JSONObject();
+    }
 
 
 }
