@@ -1,6 +1,4 @@
-package JourneyThroughAvslor.Engine.Shared.Map;
-
-import org.json.JSONObject;
+package org.avslor.JourneyThroughAvslor.Engine.Shared.Map;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
@@ -16,18 +14,21 @@ import org.json.JSONObject;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class Map extends AbstractMap
+public class MapFiler
 {
-    //Fields
-    String nameOfMap;
-
-    public Map(JSONObject mapSection)
+    public MapFiler()
     {
-       nameOfMap = mapSection.get("name").toString();
+
     }
 
-    public String getNameOfMap()
+    public MapFiler[] getMapFile()
     {
-        return nameOfMap;
+        int arraySize = 5;
+        return new MapFiler[5];
+    }
+    public int getMapSize()
+    {
+        MapFiler[] array = getMapFile();
+        return array.length;
     }
 }

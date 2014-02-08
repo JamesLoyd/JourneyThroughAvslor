@@ -1,4 +1,5 @@
-package JourneyThroughAvslor.Engine.Monsters;
+package org.avslor.JourneyThroughAvslor.Engine.Monsters;
+
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,5 +14,11 @@ package JourneyThroughAvslor.Engine.Monsters;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class AbstractFaction {
+
+/*
+ * This interface is the contracted methods for every new charachter class.
+ */
+public interface iCharacter
+{
+
 }

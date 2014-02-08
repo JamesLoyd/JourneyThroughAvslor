@@ -1,4 +1,4 @@
-package JourneyThroughAvslor.Engine.Shared;
+package org.avslor.JourneyThroughAvslor.Engine.Shared;
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,6 +13,11 @@ package JourneyThroughAvslor.Engine.Shared;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class BaseInventory
+
+public class GameEngine implements Runnable
 {
+    public void run()
+    {
+        System.out.println("Let's Get this thread going");
+    }
 }

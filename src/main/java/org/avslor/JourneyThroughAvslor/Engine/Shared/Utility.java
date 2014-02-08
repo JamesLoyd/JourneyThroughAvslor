@@ -1,6 +1,5 @@
-package JourneyThroughAvslor;
-import JourneyThroughAvslor.Engine.Shared.GameEngine;
-import java.util.Scanner;
+package org.avslor.JourneyThroughAvslor.Engine.Shared;
+import org.json.JSONObject;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
@@ -16,17 +15,26 @@ import java.util.Scanner;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class Main
+public class Utility
 {
-    public static void main(String args[])
+    public static double getAttackDamage(double attackPoints, double frequency)
     {
-        String answer;
-        Scanner keyBoard = new Scanner(System.in);
-        System.out.println("Press Y to play the game or press no to exit");
-        answer = keyBoard.next();
-        if (answer.toLowerCase().equals("y"))
-        {
-            (new Thread(new GameEngine())).start();
-        }
+       return attackPoints * frequency;
     }
+
+    /*
+     * This will probably need to be refactored to read a change log or something. Or simply to drive a window of the UI
+     * that we will call about.
+     */
+    public static void getProjectInfo()
+    {
+    }
+
+    public static JSONObject getJSONOBject()
+    {
+        //for the time being
+        return new JSONObject();
+    }
+
+
 }

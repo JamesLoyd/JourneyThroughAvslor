@@ -1,5 +1,4 @@
-package JourneyThroughAvslor.Engine.Shared.Map;
-
+package org.avslor.JourneyThroughAvslor.Engine.Shared.Map;
 import org.json.JSONObject;
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
@@ -15,21 +14,25 @@ import org.json.JSONObject;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class MapFiler
+public class MapReader
 {
-    public MapFiler()
+    MapFiler fileService;
+
+    private MapReader(MapFiler fileService)
     {
 
     }
 
-    public MapFiler[] getMapFile()
-    {
-        int arraySize = 5;
-        return new MapFiler[5];
+    public static MapReader createMapReader(MapFiler fileService) {
+        return new MapReader(fileService);
     }
-    public int getMapSize()
+
+    //methods
+    public Map returnMap()
     {
-        MapFiler[] array = getMapFile();
-        return array.length;
+        JSONObject temp = new JSONObject();
+        fileService.getMapFile();
+        return new Map(temp);
     }
+
 }

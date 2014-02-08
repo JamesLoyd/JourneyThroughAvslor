@@ -1,7 +1,4 @@
-package JourneyThroughAvslor.Engine.Shared.Map;
-
-import org.json.JSONObject;
-
+package org.avslor.JourneyThroughAvslor.Engine.Shared;
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,6 +13,6 @@ import org.json.JSONObject;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public abstract class AbstractMap
+public class BaseInventory
 {
 }
