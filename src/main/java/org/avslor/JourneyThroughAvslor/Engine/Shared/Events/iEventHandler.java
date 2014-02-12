@@ -17,4 +17,5 @@ import org.avslor.JourneyThroughAvslor.Engine.Shared.Map.MapReader;
 public interface iEventHandler
 {
     void callMap(MapReader mapReader);
+    boolean checkEvent();
 }

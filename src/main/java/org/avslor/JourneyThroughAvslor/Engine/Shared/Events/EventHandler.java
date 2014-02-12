@@ -31,8 +31,9 @@ public class EventHandler implements iEventHandler
         EventMap = mapReader.returnMap();
     }
 
-    public boolean checkEvent(int x, int y)
+    @Override
+    public boolean checkEvent()
     {
-        return true;
+        return false;
     }
 }
