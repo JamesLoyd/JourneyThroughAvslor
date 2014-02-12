@@ -19,7 +19,6 @@ import java.util.concurrent.ConcurrentHashMap;
 public class EventHandler implements iEventHandler
 {
     ConcurrentHashMap eventHashMap = new ConcurrentHashMap();
-    Map EventMap = null;
     private Map EventMap = null;
     private Event event = null;
     private EventHandler(Event event)
