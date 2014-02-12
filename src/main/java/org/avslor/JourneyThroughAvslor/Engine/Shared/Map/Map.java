@@ -1,4 +1,5 @@
-package JourneyThroughAvslor.Engine.Shared;
+package org.avslor.JourneyThroughAvslor.Engine.Shared.Map;
+
 import org.json.JSONObject;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
@@ -15,21 +16,18 @@ import org.json.JSONObject;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class Utility
+public class Map extends AbstractMap
 {
-    public static double getAttackDamage(double attackPoints, double frequency)
+    //Fields
+    String nameOfMap;
+
+    public Map(JSONObject mapSection)
     {
-       return attackPoints * frequency;
+       nameOfMap = mapSection.get("name").toString();
     }
 
-    /*
-     * This will probably need to be refactored to read a change log or something. Or simply to drive a window of the UI
-     * that we will call about.
-     */
-    public static void getProjectInfo()
+    public String getNameOfMap()
     {
+        return nameOfMap;
     }
-
-
-
 }

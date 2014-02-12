@@ -1,6 +1,6 @@
-package JourneyThroughAvslor.Engine;
+package org.avslor.JourneyThroughAvslor.Engine;
 
-import JourneyThroughAvslor.Engine.Shared.Utility;
+import org.avslor.JourneyThroughAvslor.Engine.Shared.Utility;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

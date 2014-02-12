@@ -1,4 +1,6 @@
-package JourneyThroughAvslor.Engine.Shared;
+package org.avslor.JourneyThroughAvslor.Engine.Shared;
+import org.json.JSONObject;
+
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,6 +15,26 @@ package JourneyThroughAvslor.Engine.Shared;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class BaseInventory
+public class Utility
 {
+    public static double getAttackDamage(double attackPoints, double frequency)
+    {
+       return attackPoints * frequency;
+    }
+
+    /*
+     * This will probably need to be refactored to read a change log or something. Or simply to drive a window of the UI
+     * that we will call about.
+     */
+    public static void getProjectInfo()
+    {
+    }
+
+    public static JSONObject getJSONOBject()
+    {
+        //for the time being
+        return new JSONObject();
+    }
+
+
 }
