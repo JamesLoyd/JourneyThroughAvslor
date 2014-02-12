@@ -1,4 +1,7 @@
 package org.avslor.JourneyThroughAvslor.Engine.Shared.Events;
+
+import java.util.Random;
+
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,6 +16,22 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared.Events;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class AbstractEvents
+public abstract class AbstractEvents
 {
+    String name;
+    public AbstractEvents( String name)
+    {
+        this.name = name;
+    }
+    public int rolldice()
+    {
+        Random random = new Random();
+        random.setSeed(343453454);
+        return random.nextInt();
+
+    }
+    public String toString()
+    {
+        return name;
+    }
 }

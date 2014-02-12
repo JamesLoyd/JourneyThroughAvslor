@@ -13,6 +13,11 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared.Events;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class Event
+public class Event extends AbstractEvents
 {
+
+    public Event(String name)
+    {
+        super(name);
+    }
 }
