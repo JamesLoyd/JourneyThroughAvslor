@@ -18,13 +18,19 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class EventHandler implements iEventHandler
 {
-    public EventHandler()
+    ConcurrentHashMap eventHashMap = new ConcurrentHashMap();
+    Map EventMap = null;
+
+    private EventHandler()
     {
         //null constructor for now
     }
 
-    ConcurrentHashMap eventHashMap = new ConcurrentHashMap();
-    Map EventMap = null;
+    public static EventHandler createEventHandler()
+    {
+        return new EventHandler();
+    }
+
     public void setEventHashMap(ConcurrentHashMap eventHashMap)
     {
         this.eventHashMap = eventHashMap;
@@ -40,5 +46,10 @@ public class EventHandler implements iEventHandler
     public boolean checkEvent()
     {
         return false;
+    }
+
+    public String toString()
+    {
+        return "This is an event handler with current input coordinates (x and y to be added here)" ;
     }
 }
