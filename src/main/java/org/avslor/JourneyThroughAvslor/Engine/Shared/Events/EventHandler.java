@@ -19,9 +19,8 @@ import java.util.concurrent.ConcurrentHashMap;
 public class EventHandler implements iEventHandler
 {
     ConcurrentHashMap eventHashMap = new ConcurrentHashMap();
-    Map EventMap = null;
-    Event event = null;
-
+   private Map EventMap = null;
+   private Event event = null;
     private EventHandler(Event event)
     {
         this.event = event;
@@ -35,6 +34,8 @@ public class EventHandler implements iEventHandler
     public void setEventHashMap(ConcurrentHashMap eventHashMap)
     {
         this.eventHashMap = eventHashMap;
+        event.toString();
+        EventMap.toString();
     }
 
     @Override

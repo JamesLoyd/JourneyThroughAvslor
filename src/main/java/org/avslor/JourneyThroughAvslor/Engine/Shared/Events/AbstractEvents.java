@@ -23,13 +23,7 @@ public abstract class AbstractEvents
     {
         this.name = name;
     }
-    public int rolldice()
-    {
-        Random random = new Random();
-        random.setSeed(343453454);
-        return random.nextInt();
 
-    }
     public String toString()
     {
         return name;
