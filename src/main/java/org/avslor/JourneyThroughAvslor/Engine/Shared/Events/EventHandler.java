@@ -20,15 +20,16 @@ public class EventHandler implements iEventHandler
 {
     ConcurrentHashMap eventHashMap = new ConcurrentHashMap();
     Map EventMap = null;
+    Event event = null;
 
-    private EventHandler()
+    private EventHandler(Event event)
     {
-        //null constructor for now
+        this.event = event;
     }
 
-    public static EventHandler createEventHandler()
+    public static EventHandler createEventHandler(Event event)
     {
-        return new EventHandler();
+        return new EventHandler(event);
     }
 
     public void setEventHashMap(ConcurrentHashMap eventHashMap)
