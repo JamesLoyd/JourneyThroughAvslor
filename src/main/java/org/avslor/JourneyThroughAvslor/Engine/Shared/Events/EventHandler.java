@@ -1,4 +1,6 @@
 package org.avslor.JourneyThroughAvslor.Engine.Shared.Events;
+import org.avslor.JourneyThroughAvslor.Engine.Shared.Map.MapReader;
+import java.util.concurrent.ConcurrentHashMap;
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,10 +15,7 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared.Events;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-
-import java.util.concurrent.ConcurrentHashMap;
-
-public class EventHandler
+public class EventHandler implements iEventHandler
 {
     ConcurrentHashMap eventHashMap = new ConcurrentHashMap();
 
@@ -29,5 +28,11 @@ public class EventHandler
     public int hashCode()
     {
         return super.hashCode();
+    }
+
+    @Override
+    public void callMap(MapReader mapReader)
+    {
+
     }
 }

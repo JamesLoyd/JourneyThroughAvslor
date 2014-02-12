@@ -1,4 +1,5 @@
 package org.avslor.JourneyThroughAvslor.Engine.Shared.Events;
+import org.avslor.JourneyThroughAvslor.Engine.Shared.Map.MapReader;
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,4 +16,5 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared.Events;
  */
 public interface iEventHandler
 {
+    void callMap(MapReader mapReader);
 }
