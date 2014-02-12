@@ -28,7 +28,11 @@ public class EventHandler implements iEventHandler
     @Override
     public void callMap(MapReader mapReader)
     {
-
         EventMap = mapReader.returnMap();
+    }
+
+    public boolean checkEvent(int x, int y)
+    {
+        return true;
     }
 }
