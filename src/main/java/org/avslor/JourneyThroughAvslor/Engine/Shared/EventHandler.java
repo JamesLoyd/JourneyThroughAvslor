@@ -20,12 +20,14 @@ public class EventHandler
 {
     ConcurrentHashMap eventHashMap = new ConcurrentHashMap();
 
-    public void setEventHashMap(ConcurrentHashMap eventHashMap) {
+    public void setEventHashMap(ConcurrentHashMap eventHashMap)
+    {
         this.eventHashMap = eventHashMap;
     }
 
     @Override
-    public int hashCode() {
+    public int hashCode()
+    {
         return super.hashCode();
     }
 }
