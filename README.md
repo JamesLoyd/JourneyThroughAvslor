@@ -24,7 +24,7 @@ Every member of the core team has an important role.
 One of the easiest ways to get involved is to come by our IRC channel and then we can give you information on Trello, how we handle pull requests and such. We hope to see you come by sometime. Our, information is listed below
 
 ###IRC Channel###
-We are located at  \#JourneyThroughAvslor on [FreeNode](http://freenode.net/). Come by sometime!
+We are located at  \#org.avslor.JourneyThroughAvslor on [FreeNode](http://freenode.net/). Come by sometime!
 
 ###We're on Trello###
 We use Trello for Project management.
@@ -34,7 +34,7 @@ We use Trello for Project management.
 [Avslor.org](http://avslor.org)
 
 ##License ##
-This software is licensed under [Apache v2.0](https://github.com/Avslor/JourneyThroughAvslor/blob/master/LICENSE).
+This software is licensed under [Apache v2.0](https://github.com/Avslor/org.avslor.JourneyThroughAvslor/blob/master/LICENSE).
 
 ##[Travis](https://travis-ci.org/) (A Continuous Integration Build Service)##
 [![Build Status](https://travis-ci.org/Avslor/JourneyThroughAvslor.png?branch=master)](https://travis-ci.org/Avslor/JourneyThroughAvslor)
