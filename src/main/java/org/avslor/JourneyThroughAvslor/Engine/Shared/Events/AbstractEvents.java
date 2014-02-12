@@ -1,4 +1,7 @@
-package org.avslor.JourneyThroughAvslor.Engine.Shared;
+package org.avslor.JourneyThroughAvslor.Engine.Shared.Events;
+
+import java.util.Random;
+
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,17 +16,16 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-
-import org.avslor.JourneyThroughAvslor.Engine.Shared.Events.Event;
-import org.avslor.JourneyThroughAvslor.Engine.Shared.Events.EventHandler;
-
-public class GameEngine implements Runnable
+public abstract class AbstractEvents
 {
-    public void run()
+    String name;
+    public AbstractEvents( String name)
     {
-        System.out.println("Let's Get this thread going");
-        Event event = new Event("event");
-        EventHandler eventHandler = EventHandler.createEventHandler(event);
-        eventHandler.toString();
+        this.name = name;
+    }
+
+    public String toString()
+    {
+        return name;
     }
 }

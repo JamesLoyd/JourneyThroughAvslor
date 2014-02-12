@@ -20,15 +20,39 @@ public class EventHandler implements iEventHandler
 {
     ConcurrentHashMap eventHashMap = new ConcurrentHashMap();
     Map EventMap = null;
+    private Map EventMap = null;
+    private Event event = null;
+    private EventHandler(Event event)
+    {
+        this.event = event;
+    }
+
+    public static EventHandler createEventHandler(Event event)
+    {
+        return new EventHandler(event);
+    }
     public void setEventHashMap(ConcurrentHashMap eventHashMap)
     {
         this.eventHashMap = eventHashMap;
+        event.toString();
+        EventMap.toString();
     }
 
     @Override
     public void callMap(MapReader mapReader)
     {
-
-       EventMap = mapReader.returnMap();
+        EventMap = mapReader.returnMap();
     }
+
+    @Override
+    public boolean checkEvent()
+    {
+        return false;
+    }
+    public String toString()
+    {
+        return "This is an event handler with current input coordinates (x and y to be added here)" ;
+    }
+
+
 }
