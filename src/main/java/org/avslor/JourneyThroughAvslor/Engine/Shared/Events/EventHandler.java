@@ -18,6 +18,11 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class EventHandler implements iEventHandler
 {
+    public EventHandler()
+    {
+        //null constructor for now
+    }
+
     ConcurrentHashMap eventHashMap = new ConcurrentHashMap();
     Map EventMap = null;
     public void setEventHashMap(ConcurrentHashMap eventHashMap)

@@ -14,6 +14,8 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared;
  *   limitations under the License.
  */
 
+import org.avslor.JourneyThroughAvslor.Engine.Shared.Events.EventHandler;
+
 public class GameEngine implements Runnable
 {
     public void run()
