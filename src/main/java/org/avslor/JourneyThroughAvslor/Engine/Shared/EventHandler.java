@@ -14,6 +14,18 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared;
  *   limitations under the License.
  */
 
+import java.util.concurrent.ConcurrentHashMap;
+
 public class EventHandler
 {
+    ConcurrentHashMap eventHashMap = new ConcurrentHashMap();
+
+    public void setEventHashMap(ConcurrentHashMap eventHashMap) {
+        this.eventHashMap = eventHashMap;
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 }
