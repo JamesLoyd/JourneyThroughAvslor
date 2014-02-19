@@ -11,7 +11,7 @@ The Avslor team is looking to have the game blend elements of [interactive ficti
 ##Meet the team##
 * James Loyd [(carharrtjimmy)](https://github.com/carharttjimmy) - Lead Developer and Project Manager
 * Joshua Theze [(foxiepaws)](https://github.com/foxiepaws) - Architect and Core Developer
-* Terra-And-Luna [(Nyux)](https://github.com/nyux) - Core Developer (Inactive currently)
+* Terra-And-Luna [(Nyux)](https://github.com/nyux) (Former Developer)
 
 ###Roles###
 Every member of the core team has an important role.
@@ -37,12 +37,4 @@ We use Trello for Project management.
 This software is licensed under [Apache v2.0](https://github.com/Avslor/org.avslor.JourneyThroughAvslor/blob/master/LICENSE).
 
 ##[Travis](https://travis-ci.org/) (A Continuous Integration Build Service)##
-###Avslor's Build Status###
-[![Build Status](https://travis-ci.org/Avslor/org.avslor.JourneyThroughAvslor.png?branch=master)](https://travis-ci.org/Avslor/org.avslor.JourneyThroughAvslor)
-####Master Branch####
-[![Build Status](https://travis-ci.org/carharttjimmy/org.avslor.JourneyThroughAvslor.png?branch=master)](https://travis-ci.org/carharttjimmy/org.avslor.JourneyThroughAvslor)
-####Canidate for Avslor-Master####
-[![Build Status](https://travis-ci.org/carharttjimmy/org.avslor.JourneyThroughAvslor.png?branch=candidate)](https://travis-ci.org/carharttjimmy/org.avslor.JourneyThroughAvslor)
-
-###Side Note###
-This is simply my development repo as I work on adding new features and such.
+[![Build Status](https://travis-ci.org/Avslor/JourneyThroughAvslor.png?branch=master)](https://travis-ci.org/Avslor/JourneyThroughAvslor)
