@@ -1,4 +1,6 @@
 package org.avslor.JourneyThroughAvslor.Engine.Shared;
+import org.avslor.JourneyThroughAvslor.Engine.Shared.Events.Event;
+import org.avslor.JourneyThroughAvslor.Engine.Shared.Events.EventHandler;
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,8 +16,6 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared;
  *   limitations under the License.
  */
 
-import org.avslor.JourneyThroughAvslor.Engine.Shared.Events.Event;
-import org.avslor.JourneyThroughAvslor.Engine.Shared.Events.EventHandler;
 
 public class GameEngine implements Runnable
 {
