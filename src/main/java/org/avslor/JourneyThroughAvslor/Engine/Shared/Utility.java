@@ -41,6 +41,4 @@ public class Utility
     {
         return new JSONObject();
     }
-
-
 }

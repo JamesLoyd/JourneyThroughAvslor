@@ -1,5 +1,12 @@
 package org.avslor.JourneyThroughAvslor.Engine.Shared;
 
+import jdk.nashorn.api.scripting.JSObject;
+import org.json.JSONObject;
+
+import javax.rmi.CORBA.Util;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,7 +23,9 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared;
  */
 public class Storyreader
 {
-
+    private boolean storyHasBeenRead = false;
+    private ArrayList Story = new ArrayList();
+    int count3;
     private Storyreader()
     {
     }
@@ -25,11 +34,37 @@ public class Storyreader
         return new Storyreader();
     }
 
-    public void readStory()
+    //this class will be restricted to only class methods can call
+    private void readStory()
     {
-
+        storyHasBeenRead = true;
+        JSONObject test = Utility.getJSONOBject();
 
     }
 
+    private String returnLineText()
+    {
+        return "test" + count3++ ;
+    }
 
+    public ArrayList readTextIntoArrayList()
+    {
+        int count = 2;
+        if(storyHasBeenRead == false)
+        {
+            //once this has been done than recursive call back.
+            readStory();
+            readTextIntoArrayList();
+        }
+        else
+        {
+            for(int i=0;i<3;i++)
+            {
+                Story.add(i,returnLineText());
+            }
+
+
+        }
+        return Story;
+    }
 }
