@@ -1,5 +1,5 @@
 package org.avslor.JourneyThroughAvslor.Engine;
-import org.avslor.JourneyThroughAvslor.Engine.Shared;
+import org.avslor.JourneyThroughAvslor.Engine.Monsters;
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@ import org.avslor.JourneyThroughAvslor.Engine.Shared;
  *   limitations under the License.
  */
  
- public class Player implements iCharachter
+ public class Player implements iCharacter
  {
 	//STATS
 	private String name;
