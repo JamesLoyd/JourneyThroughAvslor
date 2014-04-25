@@ -30,13 +30,9 @@ public class Storyreader
         return new Storyreader();
     }
 
-    public void readJSONFILE()
+    public void readStory()
     {
-        //For the time being we will mock this until we have settled on a suitable JSON format.
-        ArrayList text = new ArrayList();
-        text.add(1,"text");
-        Story section = Story.getStory(text);
-        section.toString();
+
 
     }
 
