@@ -21,13 +21,14 @@ public class Story
 {
     private ArrayList text = new ArrayList();
     private ArrayList indexes = new ArrayList();
-    private Story(ArrayList text, ArrayList indexes)
+
+    public Story(ArrayList text, ArrayList indexes)
     {
         this.text = text;
         this.indexes = indexes;
     }
 
-    public Story getStory(ArrayList text, ArrayList indexes)
+    public static Story getStory(ArrayList text, ArrayList indexes)
     {
         return new Story(text, indexes)
     }

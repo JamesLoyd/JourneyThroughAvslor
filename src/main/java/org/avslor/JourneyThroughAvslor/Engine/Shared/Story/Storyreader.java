@@ -2,6 +2,8 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared.Story;
 
 import java.io.FileReader;
 import java.lang.String;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
@@ -31,7 +33,10 @@ public class StoryReader
 
     public Story readJSONFILE()
     {
-
+        //For the time being we will mock this until we have settled on a suitable JSON format.
+        ArrayList text = new ArrayList();
+        text.add(1,"text");
+        Story my = new Story();
     }
 
 }
