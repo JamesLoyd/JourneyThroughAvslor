@@ -17,7 +17,11 @@ package org.avslor.JourneyThroughAvslor.Engine;
  public class Player implements iCharachter
  {
 	//STATS
-	
+	private String name;
+	private String race;
+	private String class;
+	private String alignment;
+	private int level;
 	//constructor
 	public Player()
 	{
