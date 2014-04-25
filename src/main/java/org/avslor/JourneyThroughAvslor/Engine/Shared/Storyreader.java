@@ -24,7 +24,7 @@ import java.util.ArrayList;
 public class Storyreader
 {
     private boolean storyHasBeenRead = false;
-    private ArrayList Story = new ArrayList();
+    private ArrayList<String> Story = new ArrayList<String>();
     int count3;
     private Storyreader()
     {
