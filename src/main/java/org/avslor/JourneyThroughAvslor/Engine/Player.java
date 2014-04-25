@@ -1,7 +1,4 @@
-package org.avslor.JourneyThroughAvslor.Engine.Monsters;
-
-import org.avslor.JourneyThroughAvslor.Engine.Shared.Faction;
-
+package org.avslor.JourneyThroughAvslor.Engine;
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
