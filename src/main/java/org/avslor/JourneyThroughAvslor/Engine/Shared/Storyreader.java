@@ -24,10 +24,11 @@ import java.util.ArrayList;
 public class Storyreader
 {
     private boolean storyHasBeenRead = false;
-    private ArrayList<String> Story = new ArrayList<String>();
+    private ArrayList<String> Story;
     int count3;
     private Storyreader()
     {
+       Story = new ArrayList<String>();
     }
 
     public static Storyreader createStoryReader() {
@@ -44,7 +45,7 @@ public class Storyreader
 
     private String returnLineText()
     {
-        return "test" + count3++ ;
+        return "test";
     }
 
     private ArrayList readTextIntoArrayList()
@@ -72,6 +73,6 @@ public class Storyreader
     {
         readStoryFromJSONObject();
         readTextIntoArrayList();
-        return Story.get(2);
+        return Story.get(1);
     }
 }
