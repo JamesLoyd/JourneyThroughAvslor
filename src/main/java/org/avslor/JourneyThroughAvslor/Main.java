@@ -26,7 +26,7 @@ public class Main
         answer = keyBoard.next();
         if (answer.toLowerCase().equals("y"))
         {
-            GameEngine game = new GameEngine();
+            GameEngine game = new GameEngine("Beginning","George","section1");
             game.Start();
 
 
