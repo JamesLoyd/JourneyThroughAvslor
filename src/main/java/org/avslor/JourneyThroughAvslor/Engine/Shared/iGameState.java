@@ -15,5 +15,7 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared;
  */
 public interface iGameState
 {
-    
+    //proposed changes
+    //commented out for now
+    /*public final static GAMEMODE = "Alpha" */
 }
