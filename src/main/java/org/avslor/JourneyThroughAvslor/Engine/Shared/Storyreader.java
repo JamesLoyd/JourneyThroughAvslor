@@ -22,11 +22,14 @@ import java.util.ArrayList;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class Storyreader
+
+//This class will also rely on gamestate for saving data. Thus an interface was added.
+public class Storyreader implements iGameState
 {
     private boolean storyHasBeenRead = false;
     private ArrayList<String> Story;
-    int count3;
+
+    //make it private
     private Storyreader()
     {
        Story = new ArrayList<String>();
@@ -46,6 +49,7 @@ public class Storyreader
 
     private String returnLineText(int i)
     {
+        //some easy testing code
         switch(i)
         {
             case 0: return "some text";
@@ -84,5 +88,16 @@ public class Storyreader
             buffer.append(Story.get(i) + "\n");
         }
         return buffer.toString();
+    }
+    /*
+     * This will be utilized later on.
+     */
+    public String ReadStoryAtLine(String sectionName, int lineNumber)
+    {
+        String storyAtLineNumber;
+        StringBuffer buffer = new StringBuffer();
+        buffer.append(Story.get(lineNumber));
+        storyAtLineNumber = buffer.toString();
+        return storyAtLineNumber;
     }
 }
