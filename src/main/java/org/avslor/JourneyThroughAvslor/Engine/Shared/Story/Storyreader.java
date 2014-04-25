@@ -29,9 +29,8 @@ public class StoryReader
         return new StoryReader();
     }
 
-    public String readJSONFILE()
+    public Story readJSONFILE()
     {
-        FileReader JSONReader = new FileReader();
 
     }
 

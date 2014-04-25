@@ -13,3 +13,27 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared.Story;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Story
+{
+    private ArrayList text = new ArrayList();
+    private ArrayList indexes = new ArrayList();
+    private Story(ArrayList text, ArrayList indexes)
+    {
+        this.text = text;
+        this.indexes = indexes;
+    }
+
+    public Story getStory(ArrayList text, ArrayList indexes)
+    {
+        return new Story(text, indexes)
+    }
+
+    public String toString()
+    {
+        System.out.println("This story section has " + indexes.size() + " lines in it.")
+    }
+}
