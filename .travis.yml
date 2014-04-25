@@ -1,6 +1,1 @@
-language: java
-
-notifications:
-    irc:
-      - "chat.freenode.net#org.avslor.JourneyThroughAvslor"
-
+language: javajdk: -  oraclejdk8notifications:    irc:      - "chat.freenode.net#org.avslor.JourneyThroughAvslor"
