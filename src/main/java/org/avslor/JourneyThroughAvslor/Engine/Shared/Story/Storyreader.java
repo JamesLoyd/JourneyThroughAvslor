@@ -1,4 +1,8 @@
-package org.avslor.JourneyThroughAvslor.Engine.Shared;
+package org.avslor.JourneyThroughAvslor.Engine.Shared.Story;
+
+import java.io.FileReader;
+import java.lang.String;
+
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,11 +19,20 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared;
  */
 public class StoryReader
 {
-    private StoryReader()
+
+
+    private StoryReader(int lineIndex)
     {
     }
 
-    public static StoryReader createStoryReader() {
+    public static StoryReader createStoryReader(int lineIndex) {
         return new StoryReader();
     }
+
+    public String readJSONFILE()
+    {
+        FileReader JSONReader = new FileReader();
+
+    }
+
 }
