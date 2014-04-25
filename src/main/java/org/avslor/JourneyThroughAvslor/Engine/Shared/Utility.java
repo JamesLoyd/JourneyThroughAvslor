@@ -1,4 +1,5 @@
 package org.avslor.JourneyThroughAvslor.Engine.Shared;
+import jdk.nashorn.api.scripting.JSObject;
 import org.json.JSONObject;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
@@ -34,6 +35,11 @@ public class Utility
     {
         //for the time being
         return new JSONObject();
+    }
+    
+    public static readStoryAssets
+    {
+        return new JSObject();
     }
 
 
