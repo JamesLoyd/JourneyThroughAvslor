@@ -73,6 +73,11 @@ public class Storyreader
     {
         readStoryFromJSONObject();
         readTextIntoArrayList();
-        return Story.get(1);
+        StringBuffer buffer = new StringBuffer();
+        for(int i = 0; i < Story.size();i++)
+        {
+            buffer.append(Story.get(i) + "\n");
+        }
+        return buffer.toString();
     }
 }
