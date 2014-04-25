@@ -20,7 +20,7 @@ import org.avslor.JourneyThroughAvslor.Engine.Monsters;
 	//STATS
 	private String name;
 	private String race;
-	private String class;
+	private String classOfPlayer;
 	private String alignment;
 	private int level;
 	//constructor
