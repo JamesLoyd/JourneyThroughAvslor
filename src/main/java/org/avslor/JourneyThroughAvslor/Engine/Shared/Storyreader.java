@@ -1,5 +1,6 @@
 package org.avslor.JourneyThroughAvslor.Engine.Shared;
 
+import com.sun.org.apache.bcel.internal.generic.SWITCH;
 import jdk.nashorn.api.scripting.JSObject;
 import org.json.JSONObject;
 
@@ -43,9 +44,15 @@ public class Storyreader
 
     }
 
-    private String returnLineText()
+    private String returnLineText(int i)
     {
-        return "test";
+        switch(i)
+        {
+            case 0: return "some text";
+            case 1: return "some more text";
+            case 2: return "something even more";
+            default: return "default";
+        }
     }
 
     private ArrayList readTextIntoArrayList()
@@ -61,10 +68,8 @@ public class Storyreader
         {
             for(int i=0;i<3;i++)
             {
-                Story.add(i,returnLineText());
+                Story.add(i,returnLineText(i));
             }
-
-
         }
         return Story;
     }
