@@ -15,4 +15,5 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared;
  */
 public interface iGameState
 {
+    
 }

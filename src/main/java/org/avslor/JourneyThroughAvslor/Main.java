@@ -27,6 +27,7 @@ public class Main
         if (answer.toLowerCase().equals("y"))
         {
             GameEngine game = new GameEngine();
+            game.Start();
 
 
         }

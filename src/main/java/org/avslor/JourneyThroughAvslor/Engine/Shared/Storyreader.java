@@ -3,8 +3,7 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared;
 import jdk.nashorn.api.scripting.JSObject;
 import org.json.JSONObject;
 
-import javax.rmi.CORBA.Util;
-import java.lang.reflect.Array;
+import java.io.IOException;
 import java.util.ArrayList;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
@@ -21,11 +20,14 @@ import java.util.ArrayList;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class Storyreader
+
+//This class will also rely on gamestate for saving data. Thus an interface was added.
+public class Storyreader implements iGameState
 {
     private boolean storyHasBeenRead = false;
     private ArrayList<String> Story;
-    int count3;
+
+    //make it private
     private Storyreader()
     {
        Story = new ArrayList<String>();
@@ -43,9 +45,16 @@ public class Storyreader
 
     }
 
-    private String returnLineText()
+    private String returnLineText(int i)
     {
-        return "test";
+        //some easy testing code
+        switch(i)
+        {
+            case 0: return "some text";
+            case 1: return "some more text";
+            case 2: return "something even more";
+            default: return "default";
+        }
     }
 
     private ArrayList readTextIntoArrayList()
@@ -61,10 +70,8 @@ public class Storyreader
         {
             for(int i=0;i<3;i++)
             {
-                Story.add(i,returnLineText());
+                Story.add(i,returnLineText(i));
             }
-
-
         }
         return Story;
     }
@@ -73,6 +80,36 @@ public class Storyreader
     {
         readStoryFromJSONObject();
         readTextIntoArrayList();
-        return Story.get(1);
+        StringBuffer buffer = new StringBuffer();
+        for(int i = 0; i < Story.size();i++)
+        {
+            buffer.append(Story.get(i) + "\n");
+        }
+        return buffer.toString();
+    }
+    /*
+     * This will be utilized later on.
+     */
+    public String ReadStoryAtLine(String sectionName, int lineNumber)
+    {
+        try{
+            String storyAtLineNumber;
+            StringBuffer buffer = new StringBuffer();
+            buffer.append(Story.get(lineNumber));
+            storyAtLineNumber = buffer.toString();
+            return storyAtLineNumber;
+        }
+        catch(IndexOutOfBoundsException e)
+        {
+            Utility.handleIT(e);
+        }
+        finally
+        {
+            StringBuffer buffer = new StringBuffer();
+            buffer.append("Even though an error has happened. We will start over from the last valid save. \n");
+            buffer.append("In the case of this not being applicable. The game will start over. \n");
+            return buffer.toString();
+        }
+
     }
 }
