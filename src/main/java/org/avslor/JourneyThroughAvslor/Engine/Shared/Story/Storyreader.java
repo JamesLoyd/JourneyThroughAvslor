@@ -19,16 +19,15 @@ import java.util.ArrayList;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class StoryReader
+public class Storyreader
 {
 
-
-    private StoryReader(int lineIndex)
+    private Storyreader()
     {
     }
 
-    public static StoryReader createStoryReader(int lineIndex) {
-        return new StoryReader();
+    public static Storyreader createStoryReader() {
+        return new Storyreader();
     }
 
     public void readJSONFILE()

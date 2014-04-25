@@ -37,7 +37,7 @@ public class Utility
         return new JSONObject();
     }
 
-    public static readStoryAssets
+    public static JSONObject readStoryAssets()
     {
         return new JSONObject();
     }

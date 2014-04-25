@@ -31,9 +31,15 @@ public class Story
         return new Story(text);
     }
 
-    public void toString()
+    public String toString()
     {
-        System.out.println("This story section has " + text.size() + " lines in it.");
-        System.out.println(text.get(1));
+        //create the string buffer because why not?
+        StringBuffer buffer = new StringBuffer();
+        buffer.append("This section of the story has ");
+        buffer.append(" ");
+        buffer.append(text.size() + "\n");
+        buffer.append("the text at index position 2 is ");
+        buffer.append(text.get(2));
+       return buffer.toString();
     }
 }
