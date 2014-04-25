@@ -108,7 +108,7 @@ public class Storyreader implements iGameState
         }
         finally
         {
-            return "testing failed bitch";
+            return "testing failed moron";
         }
 
     }
