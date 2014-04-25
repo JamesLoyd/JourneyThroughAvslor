@@ -17,27 +17,27 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared;
 public class GameEngine implements iGameState
 {
 	private boolean isRunning = false;
-    private String mapName;
+        private String mapName;
 	private String charachterName;
 	private String sectionName;
 	public GameEngine(String mapName, String charachterName , String sectionName)
-    {
-        this.mapName = mapName;
+    	{
+        	this.mapName = mapName;
 		this.charachterName = charachterName;
 		this.sectionName = sectionName;
-    }
+    	}
 
-   public void Start()
-   {
-       isRunning = true;
-	   while(isRunning)
-	   {
+   	public void Start()
+   	{
+       		isRunning = true;
+	   	while(isRunning)
+	   	{
 			int i = 3;
 			Storyreader storyreader = Storyreader.createStoryReader();
 			System.out.println(storyreader.ReadStory());
 			System.out.println(storyreader.ReadStoryAtLine(sectionName,i));
 			isRunning = false;
-	    }
-    }
+	    	}
+    	}
 
 }
