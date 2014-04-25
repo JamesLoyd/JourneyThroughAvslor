@@ -26,7 +26,8 @@ public class Main
         answer = keyBoard.next();
         if (answer.toLowerCase().equals("y"))
         {
-            (new Thread(new GameEngine())).start();
+            GameEngine game = new GameEngine();
+
         }
 
     }

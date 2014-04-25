@@ -1,6 +1,5 @@
 package org.avslor.JourneyThroughAvslor.Engine.Shared;
-import org.avslor.JourneyThroughAvslor.Engine.Shared.Events.Event;
-import org.avslor.JourneyThroughAvslor.Engine.Shared.Events.EventHandler;
+
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,13 +14,12 @@ import org.avslor.JourneyThroughAvslor.Engine.Shared.Events.EventHandler;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class GameEngine implements Runnable
+public class GameEngine
 {
-    public void run()
+
+    public GameEngine()
     {
-        System.out.println("Let's Get this thread going");
-        Event event = new Event("event");
-        EventHandler eventHandler = EventHandler.createEventHandler(event);
-        eventHandler.toString();
+        Storyreader storyreader = Storyreader.createStoryReader();
+        storyreader.ReadStory();
     }
 }

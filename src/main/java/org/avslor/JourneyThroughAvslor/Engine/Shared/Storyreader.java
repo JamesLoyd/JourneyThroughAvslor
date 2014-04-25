@@ -35,7 +35,7 @@ public class Storyreader
     }
 
     //this class will be restricted to only class methods can call
-    private void readStory()
+    private void readStoryFromJSONObject()
     {
         storyHasBeenRead = true;
         JSONObject test = Utility.getJSONOBject();
@@ -47,13 +47,13 @@ public class Storyreader
         return "test" + count3++ ;
     }
 
-    public ArrayList readTextIntoArrayList()
+    private ArrayList readTextIntoArrayList()
     {
         int count = 2;
         if(storyHasBeenRead == false)
         {
             //once this has been done than recursive call back.
-            readStory();
+            readStoryFromJSONObject();
             readTextIntoArrayList();
         }
         else
@@ -66,5 +66,12 @@ public class Storyreader
 
         }
         return Story;
+    }
+
+    public String ReadStory()
+    {
+        readStoryFromJSONObject();
+        readTextIntoArrayList();
+        return Story.get(2);
     }
 }
