@@ -2,6 +2,8 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared;
 
 import jdk.nashorn.api.scripting.JSObject;
 import org.json.JSONObject;
+
+import java.io.IOException;
 import java.util.ArrayList;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
@@ -90,10 +92,24 @@ public class Storyreader implements iGameState
      */
     public String ReadStoryAtLine(String sectionName, int lineNumber)
     {
-        String storyAtLineNumber;
-        StringBuffer buffer = new StringBuffer();
-        buffer.append(Story.get(lineNumber));
-        storyAtLineNumber = buffer.toString();
-        return storyAtLineNumber;
+        try{
+            String storyAtLineNumber;
+            StringBuffer buffer = new StringBuffer();
+            buffer.append(Story.get(lineNumber));
+            storyAtLineNumber = buffer.toString();
+            return storyAtLineNumber;
+        }
+        catch(IndexOutOfBoundsException e)
+        {
+            StringBuffer buffer = new StringBuffer();
+            buffer.append("You tried to enter " + lineNumber + "\n");
+            buffer.append("You thought wrong");
+            System.out.println(buffer.toString());
+        }
+        finally
+        {
+            return "testing failed bitch";
+        }
+
     }
 }
