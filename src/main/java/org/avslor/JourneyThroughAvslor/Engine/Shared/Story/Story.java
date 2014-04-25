@@ -15,22 +15,20 @@
  */
 package org.avslor.JourneyThroughAvslor.Engine.Shared.Story;
 import java.util.ArrayList;
-import java.util.List;
 
-public class Storysomething
+public class Story
 {
     private ArrayList text = new ArrayList();
-    private ArrayList indexes = new ArrayList();
+    //private ArrayList indexes = new ArrayList(); -- we probably will be removing this soon
 
-    public Story(ArrayList text, ArrayList indexes)
+    public Story(ArrayList text)
     {
         this.text = text;
-        this.indexes = indexes;
     }
 
-    public static Story getStory(ArrayList text, ArrayList indexes)
+    public static Story getStory(ArrayList text)
     {
-        return new Story(text, indexes)
+        return new Story(text)
     }
 
     public String toString()
