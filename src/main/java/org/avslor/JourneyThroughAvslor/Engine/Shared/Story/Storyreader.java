@@ -31,12 +31,14 @@ public class StoryReader
         return new StoryReader();
     }
 
-    public Story readJSONFILE()
+    public void readJSONFILE()
     {
         //For the time being we will mock this until we have settled on a suitable JSON format.
         ArrayList text = new ArrayList();
         text.add(1,"text");
-        Story my = new Story();
+
+
     }
+
 
 }

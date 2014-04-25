@@ -1,4 +1,4 @@
-package org.avslor.JourneyThroughAvslor.Engine.Shared.Story;
+
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,11 +13,11 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared.Story;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-
+package org.avslor.JourneyThroughAvslor.Engine.Shared.Story;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Story
+public class Storysomething
 {
     private ArrayList text = new ArrayList();
     private ArrayList indexes = new ArrayList();
@@ -35,6 +35,6 @@ public class Story
 
     public String toString()
     {
-        System.out.println("This story section has " + indexes.size() + " lines in it.")
+        System.out.println("This story section has " + indexes.size() + " lines in it.");
     }
 }
