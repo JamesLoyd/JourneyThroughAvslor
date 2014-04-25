@@ -15,7 +15,10 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared;
  */
 public interface iGameState
 {
-    //proposed changes
-    //commented out for now
-    /*public final static GAMEMODE = "Alpha" */
+    /*
+     * This interface allows for objects to be saved. A class that will create savedGames will
+     * use this interface to regulate what data can be saved in the game as long as it implements 
+     * this interface. 
+     * 
+     */
 }
