@@ -1,0 +1,28 @@
+[
+    [
+        {
+            "east": "",
+            "south": "",
+            "description": ""
+        },
+        {
+            "west": "",
+            "south": "",
+            "description": ""
+        }
+     ],
+     [
+         {
+            "north":"",
+            "east":"",
+            "description":""
+         },
+         {
+            "north":"",
+            "west":"",
+            "description":"",
+            "music": "seaside.wav"
+         }
+     ]
+]
+

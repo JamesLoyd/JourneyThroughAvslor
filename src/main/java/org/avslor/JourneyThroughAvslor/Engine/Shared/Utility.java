@@ -39,7 +39,7 @@ public class Utility
 
     public static readStoryAssets
     {
-        return new JSObject();
+        return new JSONObject();
     }
 
 

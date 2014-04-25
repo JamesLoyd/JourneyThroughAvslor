@@ -28,11 +28,12 @@ public class Story
 
     public static Story getStory(ArrayList text)
     {
-        return new Story(text)
+        return new Story(text);
     }
 
-    public String toString()
+    public void toString()
     {
-        System.out.println("This story section has " + indexes.size() + " lines in it.");
+        System.out.println("This story section has " + text.size() + " lines in it.");
+        System.out.println(text.get(1));
     }
 }
