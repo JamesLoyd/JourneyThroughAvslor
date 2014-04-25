@@ -1,11 +1,7 @@
 package org.avslor.JourneyThroughAvslor.Engine.Shared;
 
-import com.sun.org.apache.bcel.internal.generic.SWITCH;
 import jdk.nashorn.api.scripting.JSObject;
 import org.json.JSONObject;
-
-import javax.rmi.CORBA.Util;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
