@@ -36,17 +36,17 @@ public class BugInfo implements iGameState
     private String typeOfException;
     private int bugNumber;
     Random random = new Random();
-    private BugInfo(StackTraceElement[] stackTrace, String message, String exeptionToString)
+    Exception e;
+    private BugInfo(Exception e)
     {
-        this.stackTrace = stackTrace;
-        this.message = message;
-        this.exceptionToString = exeptionToString;
+        this.e = e;
+        exceptionToString = e.toString();
         bugNumber = random.nextInt();
     }
 
-    public static BugInfo createBugReport(StackTraceElement[] stackTrace, String message, String exceptionToString)
+    public static BugInfo createBugReport(Exception e)
     {
-        return new BugInfo(stackTrace,message,exceptionToString);
+        return new BugInfo(e);
     }
 
     private void gatherInformation()
@@ -54,6 +54,8 @@ public class BugInfo implements iGameState
         version = Runtime.class.getPackage().getImplementationVersion();
         vendor = Runtime.class.getPackage().getImplementationVendor();
         typeOfException = Utility.handleColonInException(exceptionToString);
+        stackTrace = e.getStackTrace();
+        message = e.getMessage();
     }
 
     public void SaveBugTxtFile() throws IOException

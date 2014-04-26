@@ -69,7 +69,7 @@ public class Utility
         boolean isSecondTry = false;
         try
         {
-            BugInfo tempBug = BugInfo.createBugReport(e.getStackTrace(),e.getMessage(), e.toString());
+            BugInfo tempBug = BugInfo.createBugReport(e);
             tempBug.SaveBugTxtFile();
             StringBuffer buffer = new StringBuffer();
             buffer.append("There was an error. \n\t");
