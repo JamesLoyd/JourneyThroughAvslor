@@ -1,9 +1,7 @@
 package org.avslor.JourneyThroughAvslor.Engine.Shared;
 
-import jdk.nashorn.api.scripting.JSObject;
 import org.json.JSONObject;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
