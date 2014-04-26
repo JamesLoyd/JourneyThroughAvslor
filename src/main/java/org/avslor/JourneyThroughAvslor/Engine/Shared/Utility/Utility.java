@@ -45,7 +45,7 @@ public class Utility
 
     public static String handleColonInException(String e)
     {
-        int whereIsColon =0;
+        int whereIsColon = 0;
         char[] someText = new char[e.length()];
         someText = e.toCharArray();
         StringBuffer buffer = new StringBuffer();
@@ -69,13 +69,13 @@ public class Utility
         boolean isSecondTry = false;
         try
         {
-            BugInfo tempBug = BugInfo.createBugReport(e.getStackTrace(),e.getMessage());
-            tempBug.gatherInformation();
+            BugInfo tempBug = BugInfo.createBugReport(e.getStackTrace(),e.getMessage(), e.toString());
             tempBug.SaveBugTxtFile();
             StringBuffer buffer = new StringBuffer();
             buffer.append("There was an error. \n\t");
-            buffer.append("Type: " + handleColonInException(e.toString()) + "\n");
-            buffer.append("Please create an issue on Github for this.");
+            buffer.append("Bug" + tempBug.getBugNumber() + " has been created in somehwhere.");
+            buffer.append("You may look at it and paste its contents as a bug on Github. \n");
+            buffer.append("Sorry for the inconvenience. In most cases, you may continue to play the game.");
             return buffer.toString();
         }
         catch (IOException f)
@@ -90,7 +90,7 @@ public class Utility
             else
             {
               buffer.append("\n During the second try, something messed up");
-              buffer.append(" \n You will have to a manual bug report on github.");
+              buffer.append(" \n You will have to a manually create a bug report on github.");
             }
 
             return buffer.toString();

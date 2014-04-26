@@ -32,28 +32,34 @@ public class BugInfo implements iGameState
     private String message;
     private String version;
     private String vendor;
-    private BugInfo(StackTraceElement[] stackTrace, String message)
+    private String exceptionToString;
+    private String typeOfException;
+    private int bugNumber;
+    Random random = new Random();
+    private BugInfo(StackTraceElement[] stackTrace, String message, String exeptionToString)
     {
         this.stackTrace = stackTrace;
         this.message = message;
+        this.exceptionToString = exeptionToString;
+        bugNumber = random.nextInt();
     }
 
-    public static BugInfo createBugReport(StackTraceElement[] stackTrace, String message)
+    public static BugInfo createBugReport(StackTraceElement[] stackTrace, String message, String exceptionToString)
     {
-        return new BugInfo(stackTrace,message);
+        return new BugInfo(stackTrace,message,exceptionToString);
     }
 
-    public void gatherInformation()
+    private void gatherInformation()
     {
         version = Runtime.class.getPackage().getImplementationVersion();
         vendor = Runtime.class.getPackage().getImplementationVendor();
+        typeOfException = Utility.handleColonInException(exceptionToString);
     }
 
     public void SaveBugTxtFile() throws IOException
     {
-        Random random = new Random();
-        int rando = random.nextInt();
-        File bugFile = new File("Bug" + rando  + ".txt" );
+        gatherInformation();
+        File bugFile = new File("Bug" + bugNumber  + ".txt" );
         try
         {
             bugFile.createNewFile();
@@ -67,12 +73,23 @@ public class BugInfo implements iGameState
             bufferedWriter.newLine();
             bufferedWriter.append("\t\n" + vendor);
             bufferedWriter.newLine();
-            bufferedWriter.append("The message was:");
+            bufferedWriter.append("MESSAGE:");
             bufferedWriter.newLine();
             bufferedWriter.append("\t\n" + message);
             bufferedWriter.newLine();
-            bufferedWriter.append("In addition the type of the Exception was");
+            bufferedWriter.append("EXCEPTION TYPE:");
             bufferedWriter.newLine();
+            bufferedWriter.append("\t" + typeOfException);
+            bufferedWriter.newLine();
+            bufferedWriter.append("STACK TRACE:");
+            bufferedWriter.newLine();
+            bufferedWriter.append("----------------------");
+            bufferedWriter.newLine();
+            for (int i =0;i<stackTrace.length;i++)
+            {
+                bufferedWriter.append(stackTrace[i].toString());
+                bufferedWriter.newLine();
+            }
             bufferedWriter.flush();
             fileWriter.flush();
             fileWriter.close();
@@ -83,5 +100,10 @@ public class BugInfo implements iGameState
             Utility.handleIT(e);
         }
 
+    }
+
+    public int getBugNumber()
+    {
+        return bugNumber;
     }
 }
