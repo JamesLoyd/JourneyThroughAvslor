@@ -4,6 +4,8 @@ Journey Through Avslor
 ##About##
 We are an open source project. And, this project is a fun interactive text based RPG!
 So, hopefully soon, you will be able to dive into a realm of story, adventure, betrayal, and intrigue.
+###Java Version Required###
+Currently our development is being done using Java 8, and we expect the application itself to run on Java 8 only. However, this is subject to change.
 
 ###Playstyle###
 The Avslor team is looking to have the game blend elements of [interactive fiction](http://en.wikipedia.org/wiki/Interactive_fiction) and the turn based combat of a [JRPG](http://en.wikipedia.org/wiki/Japanese_role-playing_game).
