@@ -2,6 +2,7 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared.Utility;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.nio.file.Path;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
@@ -95,5 +96,23 @@ public class Utility
 
             return buffer.toString();
         }
+    }
+
+    public static String getVersion()
+    {
+        bugReportFolder();
+        return "pre-alpha";
+    }
+
+    public static boolean bugReportFolder()
+    {
+        System.out.println(getLocalDirectory());
+        return true;
+
+    }
+
+    public static String getLocalDirectory()
+    {
+        return  System.getProperty("user.dir");
     }
 }

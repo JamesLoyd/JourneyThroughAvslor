@@ -33,6 +33,7 @@ public class BugInfo implements iGameState
     private String version;
     private String vendor;
     private String typeOfException;
+    private String localizedMessage;
     private int bugNumber;
     Random random = new Random();
     Exception e;
@@ -73,13 +74,17 @@ public class BugInfo implements iGameState
             bufferedWriter.newLine();
             bufferedWriter.append("\t\n" + vendor);
             bufferedWriter.newLine();
+            bufferedWriter.append("EXCEPTION TYPE:");
+            bufferedWriter.newLine();
+            bufferedWriter.append("\t" + typeOfException);
+            bufferedWriter.newLine();
             bufferedWriter.append("MESSAGE:");
             bufferedWriter.newLine();
             bufferedWriter.append("\t\n" + message);
             bufferedWriter.newLine();
-            bufferedWriter.append("EXCEPTION TYPE:");
+            bufferedWriter.write("VERSION:");
             bufferedWriter.newLine();
-            bufferedWriter.append("\t" + typeOfException);
+            bufferedWriter.write("\n\t" + Utility.getVersion());
             bufferedWriter.newLine();
             bufferedWriter.append("STACK TRACE:");
             bufferedWriter.newLine();
@@ -87,9 +92,15 @@ public class BugInfo implements iGameState
             bufferedWriter.newLine();
             for (int i =0;i<stackTrace.length;i++)
             {
-                bufferedWriter.append(stackTrace[i].toString());
+                bufferedWriter.append("\t" + stackTrace[i].toString());
                 bufferedWriter.newLine();
             }
+            bufferedWriter.write("----------------------");
+            bufferedWriter.newLine();
+            bufferedWriter.write("OTHER INFORMATION:");
+            bufferedWriter.newLine();
+            bufferedWriter.write("\t[This can optionally be filled in]");
+            bufferedWriter.newLine();
             bufferedWriter.flush();
             fileWriter.flush();
             fileWriter.close();
