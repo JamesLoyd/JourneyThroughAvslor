@@ -25,7 +25,7 @@ import java.util.Random;
 
 /*
  * This class will serve as a special class that can allow us to gather detailed bug information.
- * This class requires gameStateinformation.
+ * This class requires gameState information.
  */
 public class BugInfo implements iGameState
 {
@@ -44,9 +44,19 @@ public class BugInfo implements iGameState
     Exception e;
     private BugInfo(Exception e) throws Exception
     {
-        this.e = e;
-        Utility.BugReportFolder(Utility.IsBugReportFolderThere());
-        bugNumber = generateBugNumber();
+        try
+        {
+            this.e = e;
+            Utility.BugReportFolder(Utility.IsBugReportFolderThere());
+            bugNumber = generateBugNumber();
+        }
+        catch(Exception ex)
+        {
+            Utility.handleIT(ex);
+            this.e = e;
+            Utility.BugReportFolder(Utility.IsBugReportFolderThere());
+            bugNumber = generateBugNumber();
+        }
     }
 
     public static BugInfo createBugReport(Exception e) throws Exception
