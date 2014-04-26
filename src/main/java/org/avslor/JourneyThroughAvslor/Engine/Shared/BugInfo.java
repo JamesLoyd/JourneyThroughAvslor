@@ -20,4 +20,21 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared;
  */
 public class BugInfo implements iGameState
 {
+    private StackTraceElement[] stackTrace;
+    private String message;
+    private BugInfo(StackTraceElement[] stackTrace, String message)
+    {
+        this.stackTrace = stackTrace;
+        this.message = message;
+    }
+
+    public static BugInfo createBugReport(StackTraceElement[] stackTrace, String message)
+    {
+        return new BugInfo(stackTrace,message);
+    }
+
+    public void Save()
+    {
+        
+    }
 }

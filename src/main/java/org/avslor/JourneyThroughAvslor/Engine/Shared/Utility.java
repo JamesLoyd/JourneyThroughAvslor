@@ -65,6 +65,8 @@ public class Utility
 
     public static String handleIT(Exception e)
     {
+        BugInfo tempBug = BugInfo.createBugReport(e.getStackTrace(),e.getMessage());
+        tempBug.Save();
         StringBuffer buffer = new StringBuffer();
         buffer.append("There was an error. \n\t");
         buffer.append("Type: " + handleColonInException(e.toString()) + "\n");
