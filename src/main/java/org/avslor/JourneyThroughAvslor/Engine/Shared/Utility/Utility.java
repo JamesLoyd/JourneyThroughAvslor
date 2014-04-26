@@ -1,8 +1,10 @@
 package org.avslor.JourneyThroughAvslor.Engine.Shared.Utility;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
@@ -100,17 +102,30 @@ public class Utility
 
     public static String getVersion()
     {
-        bugReportFolder();
         return "pre-alpha";
     }
 
-    public static boolean bugReportFolder()
+    public static boolean IsBugReportFolderThere()
     {
-        System.out.println(getLocalDirectory());
-        return true;
-
+        File file = new File("./Bugs");
+        if (file.isDirectory())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
+    public static void initializeBugFolder(boolean isItThere)
+    {
+        File file = new File("./Bugs");
+        if(isItThere == false)
+        {
+            file.mkdir();
+        }
+    }
     public static String getLocalDirectory()
     {
         return  System.getProperty("user.dir");
