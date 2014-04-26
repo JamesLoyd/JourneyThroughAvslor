@@ -32,7 +32,6 @@ public class BugInfo implements iGameState
     private String message;
     private String version;
     private String vendor;
-    private String exceptionToString;
     private String typeOfException;
     private int bugNumber;
     Random random = new Random();
@@ -40,7 +39,6 @@ public class BugInfo implements iGameState
     private BugInfo(Exception e)
     {
         this.e = e;
-        exceptionToString = e.toString();
         bugNumber = random.nextInt();
     }
 
@@ -53,7 +51,7 @@ public class BugInfo implements iGameState
     {
         version = Runtime.class.getPackage().getImplementationVersion();
         vendor = Runtime.class.getPackage().getImplementationVendor();
-        typeOfException = Utility.handleColonInException(exceptionToString);
+        typeOfException = Utility.getExceptionType(e.toString());
         stackTrace = e.getStackTrace();
         message = e.getMessage();
     }

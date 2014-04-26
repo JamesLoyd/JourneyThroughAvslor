@@ -43,7 +43,7 @@ public class Utility
         return new JSONObject();
     }
 
-    public static String handleColonInException(String e)
+    public static String getExceptionType(String e)
     {
         int whereIsColon = 0;
         char[] someText = new char[e.length()];
