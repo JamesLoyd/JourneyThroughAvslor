@@ -27,4 +27,5 @@ public interface iCharacter
     String getClassName();
     String getHealthPoints();
     String getMagicPoints();
+    int getLevel();
 }
