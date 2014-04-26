@@ -13,6 +13,14 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-public class ObjectBuilder
+public class ObjectBuilder implements iGameState
 {
+    //member variables
+
+    //constructors
+    public ObjectBuilder()
+    {
+
+    }
+    //class methods
 }
