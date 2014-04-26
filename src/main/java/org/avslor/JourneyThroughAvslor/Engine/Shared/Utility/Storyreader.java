@@ -1,5 +1,6 @@
-package org.avslor.JourneyThroughAvslor.Engine.Shared;
+package org.avslor.JourneyThroughAvslor.Engine.Shared.Utility;
 
+import org.avslor.JourneyThroughAvslor.Engine.Shared.iGameState;
 import org.json.JSONObject;
 
 import java.util.ArrayList;

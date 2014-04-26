@@ -1,5 +1,4 @@
-package org.avslor.JourneyThroughAvslor.Engine.Shared;
-import jdk.nashorn.api.scripting.JSObject;
+package org.avslor.JourneyThroughAvslor.Engine.Shared.Utility;
 import org.json.JSONObject;
 
 /*   Copyright 2013 James Loyd , Joshua Theze

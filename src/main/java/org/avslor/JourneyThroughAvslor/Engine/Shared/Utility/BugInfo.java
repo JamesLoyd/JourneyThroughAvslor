@@ -1,4 +1,4 @@
-package org.avslor.JourneyThroughAvslor.Engine.Shared;
+package org.avslor.JourneyThroughAvslor.Engine.Shared.Utility;
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,6 +13,8 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared;
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
+
+import org.avslor.JourneyThroughAvslor.Engine.Shared.iGameState;
 
 /*
  * This class will serve as a special class that can allow us to gather detailed bug information.
@@ -35,6 +37,6 @@ public class BugInfo implements iGameState
 
     public void Save()
     {
-        
+
     }
 }
