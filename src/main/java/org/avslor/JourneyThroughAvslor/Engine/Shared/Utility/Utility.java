@@ -76,7 +76,7 @@ public class Utility
             tempBug.SaveBugTxtFile();
             StringBuffer buffer = new StringBuffer();
             buffer.append("There was an error. \n\t");
-            buffer.append("Bug" + tempBug.getBugNumber() + " has been created in somehwhere.");
+            buffer.append("Bug" + tempBug.getBugNumber() + " has been created in the bugs folder.");
             buffer.append("You may look at it and paste its contents as a bug on Github. \n");
             buffer.append("Sorry for the inconvenience. In most cases, you may continue to play the game.");
             return buffer.toString();
@@ -118,7 +118,7 @@ public class Utility
         }
     }
 
-    public static void initializeBugFolder(boolean isItThere)
+    public static void BugReportFolder(boolean isItThere)
     {
         File file = new File("./Bugs");
         if(isItThere == false)

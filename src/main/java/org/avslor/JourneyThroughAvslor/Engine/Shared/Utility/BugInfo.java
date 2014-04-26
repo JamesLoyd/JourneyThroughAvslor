@@ -34,6 +34,10 @@ public class BugInfo implements iGameState
     private String vendor;
     private String typeOfException;
     private String localizedMessage;
+    private String gameVersion;
+    private String osName;
+    private String osVersion;
+    private String osArch;
     private int bugNumber;
     Random random = new Random();
     Exception e;
@@ -41,6 +45,7 @@ public class BugInfo implements iGameState
     {
         this.e = e;
         bugNumber = random.nextInt();
+        Utility.BugReportFolder(Utility.IsBugReportFolderThere());
     }
 
     public static BugInfo createBugReport(Exception e)
@@ -55,12 +60,15 @@ public class BugInfo implements iGameState
         typeOfException = Utility.getExceptionType(e.toString());
         stackTrace = e.getStackTrace();
         message = e.getMessage();
+        gameVersion = Utility.getVersion();
+        osName = System.getProperty("os.name");
+        osVersion = System.getProperty("os.version");
     }
 
     public void SaveBugTxtFile() throws IOException
     {
         gatherInformation();
-        File bugFile = new File("Bug" + bugNumber  + ".txt" );
+        File bugFile = new File(".\\Bugs\\Bug" + bugNumber  + ".txt" );
         try
         {
             bugFile.createNewFile();
@@ -84,7 +92,15 @@ public class BugInfo implements iGameState
             bufferedWriter.newLine();
             bufferedWriter.write("VERSION:");
             bufferedWriter.newLine();
-            bufferedWriter.write("\n\t" + Utility.getVersion());
+            bufferedWriter.write("\n\t" + gameVersion);
+            bufferedWriter.newLine();
+            bufferedWriter.append("OS:");
+            bufferedWriter.newLine();
+            bufferedWriter.append("\t Name- " + osName);
+            bufferedWriter.newLine();
+            bufferedWriter.append("\t Version- " + osVersion);
+            bufferedWriter.newLine();
+            bufferedWriter.append("\t Architecture- " + osArch);
             bufferedWriter.newLine();
             bufferedWriter.append("STACK TRACE:");
             bufferedWriter.newLine();
