@@ -1,6 +1,9 @@
 package org.avslor.JourneyThroughAvslor.Engine.Shared;
 
 import org.avslor.JourneyThroughAvslor.Engine.Shared.Utility.Storyreader;
+import org.avslor.JourneyThroughAvslor.Engine.Shared.Utility.Utility;
+
+import java.io.IOException;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
@@ -28,18 +31,21 @@ public class GameEngine implements iGameState
 		this.sectionName = sectionName;
     }
 
-   	public void Start()
-   	{
-       	boolean isRunning = true;
-	   	while(isRunning)
-	   	{
-			int i = 3;
-			Storyreader storyreader = Storyreader.createStoryReader();
-			System.out.println(storyreader.ReadStory());
-			System.out.println(storyreader.ReadStoryAtLine(sectionName,i));
-            System.out.println(mapName + " " + characterName + " " + sectionName);
-			isRunning = false;
-	    	}
-    	}
+   	public void Start() throws IOException
+    {
+        boolean isRunning = true;
+        while (isRunning) {
+            try {
+                int i = 3;
+                Storyreader storyreader = Storyreader.createStoryReader();
+                System.out.println(storyreader.ReadStory());
+                System.out.println(storyreader.ReadStoryAtLine(sectionName, i));
+                System.out.println(mapName + " " + characterName + " " + sectionName);
+                isRunning = false;
+            } catch (Exception e) {
+                Utility.handleIT(e);
+            }
+        }
+    }
 
 }

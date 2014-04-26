@@ -1,5 +1,7 @@
 package org.avslor.JourneyThroughAvslor;
 import org.avslor.JourneyThroughAvslor.Engine.Shared.GameEngine;
+import org.avslor.JourneyThroughAvslor.Engine.Shared.Utility.Utility;
+
 import java.util.Scanner;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
@@ -18,7 +20,7 @@ import java.util.Scanner;
  */
 public class Main
 {
-    public static void main(String args[])
+    public static void main(String args[]) throws Exception
     {
         String answer;
         Scanner keyBoard = new Scanner(System.in);
@@ -26,8 +28,16 @@ public class Main
         answer = keyBoard.next();
         if (answer.toLowerCase().equals("y"))
         {
-            GameEngine game = new GameEngine("Beginning","George","section1");
-            game.Start();
+            try
+            {
+                GameEngine game = new GameEngine("Beginning","George","section1");
+                game.Start();
+            }
+            catch (Exception e)
+            {
+                Utility.handleIT(e);
+            }
+
         }
 
     }

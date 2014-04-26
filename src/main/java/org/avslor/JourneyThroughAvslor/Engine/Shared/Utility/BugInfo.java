@@ -16,6 +16,7 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared.Utility;
 
 import org.avslor.JourneyThroughAvslor.Engine.Shared.iGameState;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -51,19 +52,31 @@ public class BugInfo implements iGameState
     public void SaveBugTxtFile() throws IOException
     {
         Random random = new Random();
-        StringBuffer buffer = new StringBuffer();
-        buffer.append("Java Version \n \t");
-        buffer.append(version);
-        buffer.append("\n Java Vendor: \n\t");
-        buffer.append(vendor);
-        File bugFile = new File(message+vendor+version+random.ints()+".txt");
+        int rando = random.nextInt();
+        File bugFile = new File("Bug" + rando  + ".txt" );
         try
         {
             bugFile.createNewFile();
             FileWriter fileWriter = new FileWriter(bugFile);
-            fileWriter.write(buffer.toString());
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.append("JAVA VERSION: \n\t");
+            bufferedWriter.newLine();
+            bufferedWriter.append("\t\n" + version);
+            bufferedWriter.newLine();
+            bufferedWriter.append("JAVA VENDOR: \n\t");
+            bufferedWriter.newLine();
+            bufferedWriter.append("\t\n" + vendor);
+            bufferedWriter.newLine();
+            bufferedWriter.append("The message was:");
+            bufferedWriter.newLine();
+            bufferedWriter.append("\t\n" + message);
+            bufferedWriter.newLine();
+            bufferedWriter.append("In addition the type of the Exception was");
+            bufferedWriter.newLine();
+            bufferedWriter.flush();
             fileWriter.flush();
             fileWriter.close();
+            bufferedWriter.close();
         }
         catch(IOException e)
         {
