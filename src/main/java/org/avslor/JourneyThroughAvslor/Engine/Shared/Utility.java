@@ -42,11 +42,33 @@ public class Utility
         return new JSONObject();
     }
 
+    public static String handleColonInException(String e)
+    {
+        int whereIsColon =0;
+        char[] someText = new char[e.length()];
+        someText = e.toCharArray();
+        StringBuffer buffer = new StringBuffer();
+        for(int i =0; i<someText.length;i++)
+        {
+            if(someText[i]==':')
+            {
+                whereIsColon = i;
+                break;
+            }
+        }
+        for(int j=0;j<whereIsColon;j++)
+        {
+            buffer.append(someText[j]);
+        }
+        return buffer.toString();
+    }
+
     public static String handleIT(Exception e)
     {
         StringBuffer buffer = new StringBuffer();
         buffer.append("An Exception: ");
-        buffer.append(e.toString());
+        buffer.append(handleColonInException(e.toString()));
+        buffer.append("\n" + e.toString());
         buffer.append(" has occurred please do something about this \n");
         return buffer.toString();
     }
