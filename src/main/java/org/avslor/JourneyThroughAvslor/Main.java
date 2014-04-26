@@ -28,8 +28,6 @@ public class Main
         {
             GameEngine game = new GameEngine("Beginning","George","section1");
             game.Start();
-
-
         }
 
     }
