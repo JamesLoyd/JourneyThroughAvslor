@@ -31,7 +31,7 @@ public class GameEngine implements iGameState
 		this.sectionName = sectionName;
     }
 
-   	public void Start() throws IOException
+   	public void Start() throws Exception
     {
         boolean isRunning = true;
         while (isRunning) {

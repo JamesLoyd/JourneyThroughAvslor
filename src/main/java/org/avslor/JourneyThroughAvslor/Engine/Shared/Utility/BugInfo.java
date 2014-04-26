@@ -16,6 +16,7 @@ package org.avslor.JourneyThroughAvslor.Engine.Shared.Utility;
 
 import org.avslor.JourneyThroughAvslor.Engine.Shared.iGameState;
 
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -44,7 +45,6 @@ public class BugInfo implements iGameState
     private BugInfo(Exception e)
     {
         this.e = e;
-        bugNumber = random.nextInt();
         Utility.BugReportFolder(Utility.IsBugReportFolderThere());
     }
 
@@ -65,10 +65,10 @@ public class BugInfo implements iGameState
         osVersion = System.getProperty("os.version");
     }
 
-    public void SaveBugTxtFile() throws IOException
+    public void SaveBugTxtFile() throws Exception
     {
         gatherInformation();
-        File bugFile = new File(".\\Bugs\\Bug" + bugNumber  + ".txt" );
+        File bugFile = new File(".\\Bugs\\Bug-" + getBugNumber()  + ".txt" );
         try
         {
             bugFile.createNewFile();
@@ -132,5 +132,21 @@ public class BugInfo implements iGameState
     public int getBugNumber()
     {
         return bugNumber;
+    }
+
+    public int generateBugNumber() throws Exception
+    {
+        try
+        {
+            File dir = new File("./Bugs");
+            int bugNumber = Utility.incrementBugNumber(Utility.IsBugReportFolderThere(), dir);
+            System.out.println(bugNumber);
+            return bugNumber;
+        }
+        catch (Exception e)
+        {
+            Utility.handleIT(e);
+            return random.nextInt(10);
+        }
     }
 }

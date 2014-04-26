@@ -3,6 +3,8 @@ import org.json.JSONObject;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.DirectoryStream;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -67,7 +69,7 @@ public class Utility
         return buffer.toString();
     }
 
-    public static String handleIT(Exception e) throws IOException
+    public static String handleIT(Exception e) throws Exception
     {
         boolean isSecondTry = false;
         try
@@ -81,7 +83,7 @@ public class Utility
             buffer.append("Sorry for the inconvenience. In most cases, you may continue to play the game.");
             return buffer.toString();
         }
-        catch (IOException f)
+        catch (Exception f)
         {
             StringBuffer buffer = new StringBuffer();
             if (isSecondTry == false)
@@ -129,5 +131,51 @@ public class Utility
     public static String getLocalDirectory()
     {
         return  System.getProperty("user.dir");
+    }
+
+    public static int incrementBugNumber(boolean isItThere,File dir) throws Exception
+    {
+       int max = 0;
+       int location =0;
+      // int number = 0;
+        int number = 0;
+        int extension = 0;
+        boolean hasdash = false;
+        try
+       {
+           File[] listOfFiles = dir.listFiles();
+           for (File file : listOfFiles)
+           {
+               char[] fileCharArray = new char[file.toString().length()];
+               fileCharArray = file.toString().toCharArray();
+               for(int i=0;i<fileCharArray.length;i++)
+               {
+                   if(fileCharArray[i] == '-')
+                   {
+                       location = i+1;
+                       hasdash = true;
+                   }
+                   if(fileCharArray[i] == 'g' && hasdash == false)
+                   {
+                       location = i+1;
+                   }
+                   if(fileCharArray[i]=='.')
+                   {
+                       extension = i;
+                   }
+               }
+               number = Integer.parseInt(file.toString().substring(location,extension));
+              if(number >max)
+               {
+                   max = number;
+              }
+           }
+           return max++;
+       }
+       catch(Exception e)
+       {
+           handleIT(e);
+           return 0;
+       }
     }
 }

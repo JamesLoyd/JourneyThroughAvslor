@@ -90,7 +90,7 @@ public class Storyreader implements iGameState
     /*
      * This will be utilized later on.
      */
-    public String ReadStoryAtLine(String sectionName, int lineNumber) throws IndexOutOfBoundsException, IOException
+    public String ReadStoryAtLine(String sectionName, int lineNumber) throws Exception
     {
         try{
             String storyAtLineNumber;
