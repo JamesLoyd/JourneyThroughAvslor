@@ -44,6 +44,10 @@ public class Utility
 
     public static String handleIT(Exception e)
     {
-        return "An Exception has ocurred at "+ e.toString() + " please do something about this";
+        StringBuffer buffer = new StringBuffer();
+        buffer.append("An Exception: ");
+        buffer.append(e.toString());
+        buffer.append(" has occurred please do something about this \n");
+        return buffer.toString();
     }
 }
