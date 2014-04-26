@@ -66,9 +66,9 @@ public class Utility
     public static String handleIT(Exception e)
     {
         StringBuffer buffer = new StringBuffer();
-        buffer.append("There was an error: ");
-        buffer.append(handleColonInException(e.toString()));
-        buffer.append(" has occurred please do something about this \n");
+        buffer.append("There was an error. \n\t");
+        buffer.append("Type: " + handleColonInException(e.toString()) + "\n");
+        buffer.append("Please create an issue on Github for this.");
         return buffer.toString();
     }
 }
