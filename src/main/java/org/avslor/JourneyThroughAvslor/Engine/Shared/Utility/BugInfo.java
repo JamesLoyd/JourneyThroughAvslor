@@ -87,7 +87,7 @@ public class BugInfo implements iGameState
     public void SaveBugTxtFile() throws Exception
     {
         gatherInformation();
-        File bugFile = new File(".\\Bugs\\Bug-" + generateBugNumber()  + ".txt" );
+        File bugFile = new File(".\\Bugs\\Bug-" + bugNumber  + ".txt" );
         try
         {
             bugFile.createNewFile();

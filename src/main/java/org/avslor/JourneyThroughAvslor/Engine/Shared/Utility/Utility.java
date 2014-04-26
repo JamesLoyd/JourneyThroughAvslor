@@ -159,16 +159,13 @@ public class Utility
                    }
                }
                number = Integer.parseInt(file.toString().substring(location,extension));
-               if(max == number)
-               {
-                   max = number;
-               }
+               number++;
                if(number > max)
                {
                    max = number;
                }
            }
-           return ++max;
+        return max;
        }
        catch(Exception e)
        {
