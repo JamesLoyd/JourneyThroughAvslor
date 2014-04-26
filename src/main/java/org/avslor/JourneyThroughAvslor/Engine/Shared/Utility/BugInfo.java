@@ -42,15 +42,24 @@ public class BugInfo implements iGameState
     private int bugNumber;
     Random random = new Random();
     Exception e;
-    private BugInfo(Exception e)
+    private BugInfo(Exception e) throws Exception
     {
         this.e = e;
         Utility.BugReportFolder(Utility.IsBugReportFolderThere());
+        bugNumber = generateBugNumber();
     }
 
-    public static BugInfo createBugReport(Exception e)
+    public static BugInfo createBugReport(Exception e) throws Exception
     {
-        return new BugInfo(e);
+        try
+        {
+            return new BugInfo(e);
+        }
+        catch(Exception ex)
+        {
+            Utility.handleIT(ex);
+            return new BugInfo(e);
+        }
     }
 
     private void gatherInformation()
@@ -68,7 +77,7 @@ public class BugInfo implements iGameState
     public void SaveBugTxtFile() throws Exception
     {
         gatherInformation();
-        File bugFile = new File(".\\Bugs\\Bug-" + getBugNumber()  + ".txt" );
+        File bugFile = new File(".\\Bugs\\Bug-" + generateBugNumber()  + ".txt" );
         try
         {
             bugFile.createNewFile();
@@ -140,7 +149,6 @@ public class BugInfo implements iGameState
         {
             File dir = new File("./Bugs");
             int bugNumber = Utility.incrementBugNumber(Utility.IsBugReportFolderThere(), dir);
-            System.out.println(bugNumber);
             return bugNumber;
         }
         catch (Exception e)

@@ -137,7 +137,6 @@ public class Utility
     {
        int max = 0;
        int location =0;
-      // int number = 0;
         int number = 0;
         int extension = 0;
         boolean hasdash = false;
@@ -165,12 +164,16 @@ public class Utility
                    }
                }
                number = Integer.parseInt(file.toString().substring(location,extension));
-              if(number >max)
+               if(max == number)
                {
                    max = number;
-              }
+               }
+               if(number > max)
+               {
+                   max = number;
+               }
            }
-           return max++;
+           return ++max;
        }
        catch(Exception e)
        {
