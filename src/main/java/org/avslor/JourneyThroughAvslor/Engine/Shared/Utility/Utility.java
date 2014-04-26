@@ -1,6 +1,8 @@
 package org.avslor.JourneyThroughAvslor.Engine.Shared.Utility;
 import org.json.JSONObject;
 
+import java.io.IOException;
+
 /*   Copyright 2013 James Loyd , Joshua Theze
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -62,14 +64,36 @@ public class Utility
         return buffer.toString();
     }
 
-    public static String handleIT(Exception e)
+    public static String handleIT(Exception e) throws IOException
     {
-        BugInfo tempBug = BugInfo.createBugReport(e.getStackTrace(),e.getMessage());
-        tempBug.Save();
-        StringBuffer buffer = new StringBuffer();
-        buffer.append("There was an error. \n\t");
-        buffer.append("Type: " + handleColonInException(e.toString()) + "\n");
-        buffer.append("Please create an issue on Github for this.");
-        return buffer.toString();
+        boolean isSecondTry = false;
+        try
+        {
+            BugInfo tempBug = BugInfo.createBugReport(e.getStackTrace(),e.getMessage());
+            tempBug.gatherInformation();
+            tempBug.SaveBugTxtFile();
+            StringBuffer buffer = new StringBuffer();
+            buffer.append("There was an error. \n\t");
+            buffer.append("Type: " + handleColonInException(e.toString()) + "\n");
+            buffer.append("Please create an issue on Github for this.");
+            return buffer.toString();
+        }
+        catch (IOException f)
+        {
+            StringBuffer buffer = new StringBuffer();
+            if (isSecondTry == false)
+            {
+                buffer.append("Something went wrong. We will attempt one more time.");
+                handleIT(f);
+                isSecondTry = true;
+            }
+            else
+            {
+              buffer.append("\n During the second try, something messed up");
+              buffer.append(" \n You will have to a manual bug report on github.");
+            }
+
+            return buffer.toString();
+        }
     }
 }
