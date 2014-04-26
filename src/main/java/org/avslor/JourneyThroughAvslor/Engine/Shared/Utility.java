@@ -42,8 +42,8 @@ public class Utility
         return new JSONObject();
     }
 
-    public static void handleIT(Exception e)
+    public static String handleIT(Exception e)
     {
-        System.out.println("An Exception has ocurred at "+ e.toString() + " please do something about this");
+        return "An Exception has ocurred at "+ e.toString() + " please do something about this";
     }
 }

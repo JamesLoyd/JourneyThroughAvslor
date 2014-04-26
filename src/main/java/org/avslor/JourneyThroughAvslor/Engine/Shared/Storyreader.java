@@ -99,15 +99,7 @@ public class Storyreader implements iGameState
         }
         catch(IndexOutOfBoundsException e)
         {
-            Utility.handleIT(e);
+            return Utility.handleIT(e);
         }
-        finally
-        {
-            StringBuffer buffer = new StringBuffer();
-            buffer.append("Even though an error has happened. We will start over from the last valid save. \n");
-            buffer.append("In the case of this not being applicable. The game will start over. \n");
-            return buffer.toString();
-        }
-
     }
 }

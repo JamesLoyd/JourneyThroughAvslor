@@ -31,7 +31,7 @@ public class GameEngine implements iGameState
        	boolean isRunning = true;
 	   	while(isRunning)
 	   	{
-			int i = 2;
+			int i = 3;
 			Storyreader storyreader = Storyreader.createStoryReader();
 			System.out.println(storyreader.ReadStory());
 			System.out.println(storyreader.ReadStoryAtLine(sectionName,i));
