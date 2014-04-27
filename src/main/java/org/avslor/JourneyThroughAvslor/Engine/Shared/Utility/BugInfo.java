@@ -22,6 +22,8 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
+import org.kohsuke.github.GHAuthorization;
+import org.kohsuke.github.GitHub;
 
 /*
  * This class will serve as a special class that can allow us to gather detailed bug information.
@@ -56,6 +58,7 @@ public class BugInfo implements iGameState
             this.e = e;
             Utility.BugReportFolder(Utility.IsBugReportFolderThere());
             bugNumber = generateBugNumber();
+
         }
     }
 
@@ -82,6 +85,7 @@ public class BugInfo implements iGameState
         gameVersion = Utility.getVersion();
         osName = System.getProperty("os.name");
         osVersion = System.getProperty("os.version");
+
     }
 
     public void SaveBugTxtFile() throws Exception
@@ -157,6 +161,7 @@ public class BugInfo implements iGameState
     {
         try
         {
+            gitHubIssue();
             File dir = new File("./Bugs");
             int bugNumber = Utility.incrementBugNumber(Utility.IsBugReportFolderThere(), dir);
             return bugNumber;
@@ -166,5 +171,20 @@ public class BugInfo implements iGameState
             Utility.handleIT(e);
             return random.nextInt(10);
         }
+    }
+
+    public void gitHubIssue() throws Exception
+    {
+       /*
+        try
+        {
+            GitHub client = GitHub.connectUsingOAuth("f04812d3be3661ceb4ff");
+            System.out.println(client.isCredentialValid() + "cars");
+        }
+        catch(Exception e)
+        {
+            Utility.handleIT(e);
+        }
+*/
     }
 }
