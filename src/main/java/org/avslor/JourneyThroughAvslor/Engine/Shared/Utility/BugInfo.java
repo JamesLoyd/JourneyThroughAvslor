@@ -22,8 +22,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
-import org.kohsuke.github.GHAuthorization;
-import org.kohsuke.github.GitHub;
+
 
 /*
  * This class will serve as a special class that can allow us to gather detailed bug information.
@@ -161,7 +160,6 @@ public class BugInfo implements iGameState
     {
         try
         {
-            gitHubIssue();
             File dir = new File("./Bugs");
             int bugNumber = Utility.incrementBugNumber(Utility.IsBugReportFolderThere(), dir);
             return bugNumber;
