@@ -1,5 +1,6 @@
 package org.avslor.JourneyThroughAvslor.Engine.Shared.Utility;
 
+import org.avslor.JourneyThroughAvslor.Engine.Shared.Faction;
 import org.avslor.JourneyThroughAvslor.Engine.Shared.iGameState;
 
 /*   Copyright 2013 James Loyd , Joshua Theze
@@ -26,4 +27,8 @@ public class ObjectBuilder implements iGameState
 
     }
     //class methods
+    public static Faction createObject()
+    {
+        return new Faction();
+    }
 }
