@@ -173,18 +173,5 @@ public class BugInfo implements iGameState
         }
     }
 
-    public void gitHubIssue() throws Exception
-    {
-       /*
-        try
-        {
-            GitHub client = GitHub.connectUsingOAuth("f04812d3be3661ceb4ff");
-            System.out.println(client.isCredentialValid() + "cars");
-        }
-        catch(Exception e)
-        {
-            Utility.handleIT(e);
-        }
-*/
-    }
+
 }
